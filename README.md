@@ -1,7 +1,7 @@
 [//]: # (# ⚔🛡 Security Threats and Protections for Neural Code Models &#40;NCMs&#41;)
-# ⚔🛡 TiSE: Trustworthy intelligent Software Engineering
+# ⚔🛡 Security of Neural Code Models
 
-This repository provides a summary of recent advancements in the security landscape surrounding **Neural Code Models (NCMs)**, focusing on **backdoor** and **adversarial attacks** and the corresponding defenses.
+This repository provides a summary of recent advancements in the security landscape surrounding **Neural Code Models (NCMs)**, focusing on **backdoor**, **adversarial attacks** and the corresponding defenses.
 
 **NOTE: The provided code is not guaranteed to be fully accurate and is for reference only. For specific issues, please consult the original author.**
 
@@ -15,7 +15,8 @@ This repository provides a summary of recent advancements in the security landsc
 
 ## Overview
 
-Neural Code Models (NCMs) have achieved impressive results across various code-related tasks, such as code completion, bug detection, and automatic code generation. However, with the growing use of NCMs in sensitive applications, they have become a prime target for **security attacks**, which exploit the vulnerabilities inherent in machine learning models. This repository organizes the current knowledge on **Security Threats** and **Defense Strategies** for NCMs.
+Neural Code Models (NCMs) have achieved impressive results across various code intelligence tasks, such as code generation, code summarization, vulnerability/bug detection, and so on. 
+However, with the growing use of NCMs in sensitive applications, they have become a prime target for **security attacks**, which exploit the vulnerabilities inherent in machine learning models. This repository organizes the current knowledge on **Security Threats** and **Defense Strategies** for NCMs.
 
 ## Table of Contents
 
