@@ -32,7 +32,7 @@ However, with the growing use of NCMs in sensitive applications, they have becom
   - [Adversarial Defense](#adversarial-defense)
 - [Citation](#citation)
 
-- **NOTE: Our paper (from Nanjing University, Laboratory of Intelligent Software Engineering) is labeled with 🚩.**
+- **NOTE: Our paper is labeled with 🚩.**
 
 
 [//]: # (## Introduction)
@@ -52,11 +52,11 @@ However, with the growing use of NCMs in sensitive applications, they have becom
 [//]: # (The threats discussed in the survey are divided into three main categories:)
 The survey analyzes security threats to NCMs, categorizing existing attack types such as backdoor and adversarial attacks, and explores their implications for code intelligence tasks.
 
-| Year | Conf./Jour. | Paper                                                                                                      |   
-|------|-------------|------------------------------------------------------------------------------------------------------------|
-| 2024 | CoRR        | Robustness, Security, Privacy, Explainability, Efficiency, and Usability of LargeLanguage Models for Code. | 
-| xx   | xxx         | xxxx                                                                                                       | 
-| xx   | xxx         | xxxx    🚩                                                                                                 |      
+| Year | Conf./Jour. | Paper                                                                                                                                               |   
+|------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024 | CoRR        | Robustness, Security, Privacy, Explainability, Efficiency, and Usability of LargeLanguage Models for Code.                                          | 
+| xx   | xxx         | xxxx                                                                                                                                                | 
+| 2024 | 《软件学报》      | [Markdown语法](./papers_cn/2024-软件学报-深度代码模型安全综述)   🚩 |      
 
 
 ## ⚔Security Threats
@@ -183,7 +183,7 @@ Approaches to counter adversarial attacks include:
 If you find this repository useful for your work, please include the following citation:
 ```
 @article{xxx,
-  title={Security of Neural Code Models: Survey, Landscapes, and Horizons},
+  title={Security of Neural Code Models},
   author={xxx and xxx and xxx and xxx and xxx},
   journal={arXiv preprint arXiv:xxxxx},
   year={2024}
