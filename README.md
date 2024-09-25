@@ -52,11 +52,11 @@ However, with the growing use of NCMs in sensitive applications, they have becom
 [//]: # (The threats discussed in the survey are divided into three main categories:)
 The survey analyzes security threats to NCMs, categorizing existing attack types such as backdoor and adversarial attacks, and explores their implications for code intelligence tasks.
 
-| Year | Conf./Jour. | Paper                                                                                                                                               |   
-|------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2024 | CoRR        | Robustness, Security, Privacy, Explainability, Efficiency, and Usability of LargeLanguage Models for Code.                                          | 
-| xx   | xxx         | xxxx                                                                                                                                                | 
-| 2024 | 《软件学报》      | [Markdown语法](./papers_cn/2024-软件学报-深度代码模型安全综述)   🚩 |      
+| Year | Conf./Jour. | Paper                                                                                                      |   
+|------|-------------|------------------------------------------------------------------------------------------------------------|
+| 2024 | CoRR        | Robustness, Security, Privacy, Explainability, Efficiency, and Usability of LargeLanguage Models for Code. | 
+| xx   | xxx         | xxxx                                                                                                       | 
+| 2024 | 《软件学报》      | [深度代码模型安全综述](./papers_cn/2024-软件学报-深度代码模型安全综述.pdf)   🚩                                                    |      
 
 
 ## ⚔Security Threats
