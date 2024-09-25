@@ -57,7 +57,7 @@ According to the document, security threats in Neural Code Models (NCMs) are mai
 Backdoor attacks inject malicious behavior into the model during training, allowing the attacker to trigger it at inference time using specific triggers:
 - **Data poisoning attacks**: Slight changes to the training data that cause backdoor behavior.
 
-| Year     | Conf./Jour.     | Paper                                                                             | Code Reporisty                                                                                           | Reproduced Repository |    
+| Year     | Conf./Jour.     | Paper                                                                             | Code Repository                                                                                           | Reproduced Repository |    
 |----------|-----------------|-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-----------------------|
 | 2022     | ICPR            | Backdoors in Neural Models of Source Code.                                        | [![Octocat](./figures/github.svg)](https://github.com/tech-srl/code2seq)                                 |                       |
 | 2022     | FSE             | You see what I want you to see: poisoning vulnerabilities in neural code search.  | [![Octocat](./figures/github.svg)](https://github.com/CGCL-codes/naturalcc)                              |                       |
@@ -73,7 +73,7 @@ Backdoor attacks inject malicious behavior into the model during training, allow
 
 - **Model poisoning attacks**: Changes that do not alter the functionality of the code but trick the model.
 
-| Year | Conf./Jour.       | Paper                                                                                            | Code Reporisty                                                                 | Reproduced Repository |  
+| Year | Conf./Jour.       | Paper                                                                                            | Code Repository                                                                 | Reproduced Repository |  
 |------|-------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------|
 | 2021 | USENIX Security   | You Autocomplete Me: Poisoning Vulnerabilities in Neural Code Completion.                        |                                                                                |                       |
 | 2023 | CoRR              | BadCS: A Backdoor Attack Framework for Code search.                                              |                                                                                |                       |
@@ -99,7 +99,7 @@ These attacks manipulate the input data to deceive the model into making incorre
 
 - **Black-box attacks**: Adversaries attackers can only generate adversarial examples by obtaining limited model outputs through model queries.
 
-| Year | Conf./Jour.              | Paper                                                                                                              | Code Reporisty                                                                                  | Reproduced Repository                                            |      
+| Year | Conf./Jour.              | Paper                                                                                                              | Code Repository                                                                                  | Reproduced Repository                                            |      
 |------|--------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | 2019 | USENIX Security          | Misleading Authorship Attribution of Source Code using Adversarial Learning.                                       |                                                                                                 |                                                                  |
 | 2019 | CODASPY                  | Adversarial authorship attribution in open-source projects.                                                        |                                                                                                 |                                                                  |
@@ -134,7 +134,7 @@ In response to the growing security threats, researchers have proposed various d
 ### Backdoor Defense
 Methods for defending against backdoor attacks include:
 
-| Year | Conf./Jour. | Paper                                                                                   | Code Reporisty                                                                      | Reproduced Reporisty |  
+| Year | Conf./Jour. | Paper                                                                                   | Code Repository                                                                      | Reproduced Reporisty |  
 |------|-------------|-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|----------------------|
 | 2022 | ICPR        | Backdoors in Neural Models of Source Code.                                              | [![Octocat](./figures/github.svg)](https://github.com/goutham7r/backdoors-for-code) |                      |
 | 2024 | TOSEM       | Poison attack and poison detection on deep source code processing models.               |                                                                                     |                      |
