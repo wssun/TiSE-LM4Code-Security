@@ -32,7 +32,7 @@ However, with the growing use of NCMs in sensitive applications, they have becom
   - [Adversarial Defense](#adversarial-defense)
 - [Citation](#citation)
 
-- **NOTE: Our paper is labeled with 🚩.**
+**NOTE: Our paper is labeled with 🚩.**
 
 
 [//]: # (## Introduction)
@@ -48,7 +48,7 @@ However, with the growing use of NCMs in sensitive applications, they have becom
 
 [//]: # (- Insights into the challenges posed by these attacks and opportunities for **future research**.)
 
-## ⚔Survey
+## 📃Survey
 [//]: # (The threats discussed in the survey are divided into three main categories:)
 The survey analyzes security threats to NCMs, categorizing existing attack types such as backdoor and adversarial attacks, and explores their implications for code intelligence tasks.
 
