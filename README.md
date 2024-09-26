@@ -56,7 +56,7 @@ The survey analyzes security threats to NCMs, categorizing existing attack types
 |------|-------------|------------------------------------------------------------------------------------------------------------|
 | 2023 | CoRR        | A Survey of Trojans in Neural Models of Source Code: Taxonomy and Techniques.                              |
 | 2024 | CoRR        | Robustness, Security, Privacy, Explainability, Efficiency, and Usability of Large Language Models for Code. | 
-| 2024 | 《软件学报》  | [深度代码模型安全综述](./papers_cn/2024-软件学报-深度代码模型安全综述.pdf)   🚩                                                    |      
+| 2024 |《软件学报》  | [深度代码模型安全综述](./papers_cn/2024-软件学报-深度代码模型安全综述.pdf)   🚩                                                    |      
 
 
 ## ⚔Security Threats
