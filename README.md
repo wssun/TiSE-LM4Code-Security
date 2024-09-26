@@ -151,6 +151,7 @@ Methods for defending against backdoor attacks include:
 | 2022 | ICPR        | Backdoors in Neural Models of Source Code.                                              | [![Octocat](./figures/github.svg)](https://github.com/goutham7r/backdoors-for-code) |                      |
 | 2023 | CoRR        | Occlusion-based Detection of Trojan-triggering Inputs in Large Language Models of Code. |                                                                                     |                      |
 | 2024 | TOSEM       | Poison attack and poison detection on deep source code processing models.               |                                                                                     |                      |
+| 2024 | CoRR        | Eliminating Backdoors in Neural Code Models for Secure Code Understanding.              |                                                                                     |                      |
 
 
 
