@@ -164,7 +164,7 @@ Approaches to counter adversarial attacks include:
 | 2023 | ICSE        | [RoPGen: Towards Robust Code Authorship Attribution via Automatic Coding Style Transformation.](./papers_en/2022-ICSE-RoPGen.pdf) | [![Octocat](./figures/github.svg)](https://github.com/RoPGen/RoPGen)      |                      |
 | 2023 | PACM PL     | [Discrete Adversarial Attack to Models of Code.](./papers_en/2023-PACM_CL-Discrete_Adversarial_Attack_to_Models_of_Code.pdf)                                                |                   |                      |
 | 2023 | CCS         | [Large Language Models for Code: Security Hardening and Adversarial Testing.](./papers_en/2023-CCS-Security_Hardening_and_Adversarial_Testing.pdf)                   | [![Octocat](./figures/github.svg)](https://github.com/eth-sri/sven)       |                      |
-| 2023 | CoRR        | [Enhancing Robustness of AI Offensive Code Generators via Data Augmentation.](./papers_en/2023-CoRR-Enhancing_Robustness_of_AI_Offensive_Code_Generators_via_Data_Augmentation.pdf)                   | [![Octocat](./figures/github.svg)](https://github.com/)                   |                      |
+| 2023 | CoRR        | [Enhancing Robustness of AI Offensive Code Generators via Data Augmentation.](./papers_en/2023-CoRR-Enhancing_Robustness_of_AI_Offensive_Code_Generators_via_Data_Augmentation.pdf)                   |                    |                      |
 
 
 [//]: # (## Challenges and Future Directions)
