@@ -16,7 +16,7 @@ This repository provides a summary of recent advancements in the security landsc
 ## Overview
 
 Language Models for Code (LM4Code) are advanced deep learning models that excel in programming language understanding and generation.
-NCMs have achieved impressive results across various code intelligence tasks, such as code generation, code summarization, vulnerability/bug detection, and so on. 
+LM4Code has achieved impressive results across various code intelligence tasks, such as code generation, code summarization, vulnerability/bug detection, and so on. 
 However, with the growing use of LM4Code in sensitive applications, they have become a prime target for security attacks, which exploit the vulnerabilities inherent in machine learning models. 
 This repository organizes the current knowledge on **Security Threats** and **Defense Strategies** for LM4Code.
 
