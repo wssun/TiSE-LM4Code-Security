@@ -1,7 +1,7 @@
 [//]: # (# ⚔🛡 Security Threats and Protections for Neural Code Models &#40;NCMs&#41;)
 # ⚔🛡 Security of Language Models for Code
 
-This repository provides a summary of recent advancements in the security landscape surrounding Neural Code Models, including backdoor, adversarial attacks, corresponding defenses and so on.
+This repository provides a summary of recent advancements in the security landscape surrounding Language Models for Code (also known as Neural Code Models), including backdoor, adversarial attacks, corresponding defenses and so on.
 
 **NOTE: We collect the original code from the papers and the code we have reproduced. While, our reproduced code is not guaranteed to be fully accurate and is for reference only. For specific issues, please consult the original authors.**
 
@@ -17,7 +17,8 @@ This repository provides a summary of recent advancements in the security landsc
 
 Language Models for Code (LM4Code) are advanced deep learning models that excel in programming language understanding and generation.
 NCMs have achieved impressive results across various code intelligence tasks, such as code generation, code summarization, vulnerability/bug detection, and so on. 
-However, with the growing use of NCMs in sensitive applications, they have become a prime target for security attacks, which exploit the vulnerabilities inherent in machine learning models. This repository organizes the current knowledge on **Security Threats** and **Defense Strategies** for NCMs.
+However, with the growing use of LM4Code in sensitive applications, they have become a prime target for security attacks, which exploit the vulnerabilities inherent in machine learning models. 
+This repository organizes the current knowledge on **Security Threats** and **Defense Strategies** for LM4Code.
 
 ## Table of Contents
 
@@ -50,7 +51,7 @@ However, with the growing use of NCMs in sensitive applications, they have becom
 
 ## 📃Survey
 [//]: # (The threats discussed in the survey are divided into three main categories:)
-The survey analyzes security threats to NCMs, categorizing existing attack types such as backdoor and adversarial attacks, and explores their implications for code intelligence tasks.
+The survey analyzes security threats to LM4Code, categorizing existing attack types such as backdoor and adversarial attacks, and explores their implications for code intelligence tasks.
 
 | Year | Conf./Jour. | Paper                                                                                                                                                                  |   
 |------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -61,9 +62,9 @@ The survey analyzes security threats to NCMs, categorizing existing attack types
 
 ## ⚔Security Threats
 [//]: # (The threats discussed in the survey are divided into three main categories:)
-According to the document, security threats in NCMs are mainly classified into two categories: backdoor attacks and adversarial attacks. Backdoor attacks occur during the training phase, where attackers implant hidden backdoors in the model, allowing it to function normally on benign inputs but behave maliciously when triggered by specific patterns. In contrast, adversarial attacks happen during the testing phase, where carefully crafted perturbations are added to the input, causing the model to make incorrect predictions with high confidence while remaining undetectable to humans.
+According to the document, security threats in LM4Code are mainly classified into two categories: backdoor attacks and adversarial attacks. Backdoor attacks occur during the training phase, where attackers implant hidden backdoors in the model, allowing it to function normally on benign inputs but behave maliciously when triggered by specific patterns. In contrast, adversarial attacks happen during the testing phase, where carefully crafted perturbations are added to the input, causing the model to make incorrect predictions with high confidence while remaining undetectable to humans.
 
-<img src="./figures/overview.png" alt="An overview of attacks in NCMs." width="600"/>
+<img src="./figures/overview.png" alt="An overview of attacks in LM4Code." width="600"/>
 
 ### Backdoor Attacks
 Backdoor attacks inject malicious behavior into the model during training, allowing the attacker to trigger it at inference time using specific triggers:
