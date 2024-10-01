@@ -1,5 +1,5 @@
 [//]: # (# ⚔🛡 Security Threats and Protections for Neural Code Models &#40;NCMs&#41;)
-# ⚔🛡 Security of Neural Code Models
+# ⚔🛡 Security of Language Models for Code
 
 This repository provides a summary of recent advancements in the security landscape surrounding Neural Code Models, including backdoor, adversarial attacks, corresponding defenses and so on.
 
@@ -15,7 +15,7 @@ This repository provides a summary of recent advancements in the security landsc
 
 ## Overview
 
-Neural Code Models (NCMs) are advanced deep learning models that excel in programming language understanding and generation.
+Language Models for Code (LM4Code) are advanced deep learning models that excel in programming language understanding and generation.
 NCMs have achieved impressive results across various code intelligence tasks, such as code generation, code summarization, vulnerability/bug detection, and so on. 
 However, with the growing use of NCMs in sensitive applications, they have become a prime target for security attacks, which exploit the vulnerabilities inherent in machine learning models. This repository organizes the current knowledge on **Security Threats** and **Defense Strategies** for NCMs.
 
