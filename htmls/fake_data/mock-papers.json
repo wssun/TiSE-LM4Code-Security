@@ -1,0 +1,45 @@
+{
+    "papers": [
+      {
+        "id": 1,
+        "title": "Data-efficient Fine-tuning for LLM-based Recommendation",
+        "authors": "Xinyin Ma, Gongfan Fang, Xinchao Wang",
+        "imgSrc": "images/class1_papers/paper1.png",
+        "description": "Large language models (LLMs) have shown remarkable capabilities in language understanding and generation. However, such impressive capability typically comes with a substantial model size, which presents significant challenges in both the deployment, inference, and training stages.",
+        "link": "empty.html"
+      },
+      {
+        "id": 2,
+        "title": "Exploring the Potential of LLMs in Cybersecurity",
+        "authors": "Zhang San, Li Si, Wang Wu",
+        "imgSrc": "images/class1_papers/paper2.png",
+        "description": "This paper explores the intersection of LLMs with security and privacy. We investigate how LLMs positively impact security and privacy, potential risks and threats associated with their use, and inherent vulnerabilities within LLMs.",
+        "link": "empty.html"
+      },
+      {
+        "id": 3,
+        "title": "Adversarial Attacks on LLMs",
+        "authors": "Sun Yang, Zhou Wu, Chen Liu",
+        "imgSrc": "images/class1_papers/paper3.png",
+        "description": "In this work, we focus on the vulnerability of LLMs to adversarial attacks. We demonstrate various attack techniques that can mislead LLMs and discuss potential defense mechanisms.",
+        "link": "empty.html"
+      },
+      {
+        "id": 4,
+        "title": "Understanding LLMs through the Lens of Privacy",
+        "authors": "Wang Er, Zhang San, Li Si",
+        "imgSrc": "images/class1_papers/paper1.png",
+        "description": "This paper discusses the privacy implications of large language models. We analyze the potential risks of data exposure and provide recommendations for enhancing the privacy of LLM applications.",
+        "link": "empty.html"
+      },
+      {
+        "id": 5,
+        "title": "The Future of LLMs in Autonomous Systems",
+        "authors": "Zhao Liu, Hu Ran, Gao Bai",
+        "imgSrc": "images/class1_papers/paper2.png",
+        "description": "The integration of LLMs into autonomous systems offers new possibilities for advanced decision-making and natural interaction. This paper examines the current state and future potential of LLMs in this domain.",
+        "link": "empty.html"
+      }
+    ],
+    "totalPages": 5
+}
