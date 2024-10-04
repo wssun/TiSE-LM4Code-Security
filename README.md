@@ -152,6 +152,8 @@ Methods for defending against backdoor attacks include:
 | 2023 | CoRR        | [Occlusion-based Detection of Trojan-triggering Inputs in Large Language Models of Code.](./papers_en/2023-CoRR-Occlusion-based_Detection_of_Trojan-triggering_Inputs.pdf)       |                                                                                     |                      |
 | 2024 | TOSEM       | [Poison Attack and Poison Detection on Deep Source Code Processing Models.](./papers_en/2024-TOSEM-Poison_Attack_and_Poison_Detection_on_Deep_Source_Code_Processing_Models.pdf) |                                                                                     |                      |
 | 2024 | CoRR        | [Eliminating Backdoors in Neural Code Models via Trigger Inversion.](./papers_en/2024-CoRR-Eliminating_Backdoors_via_Trigger_Inversion.pdf)  🚩                                  |                                                                                     |                      |
+| 2024 | CoRR        | [Defending Code Language Models against Backdoor Attacks
+with Deceptive Cross-Entropy Loss.](./papers_en/2024-CoRR-Eliminating_Backdoors_via_Trigger_Inversion.pdf)  🚩                                  |                                                                                     |                      |
 
 
 
