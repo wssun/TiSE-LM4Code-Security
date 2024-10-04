@@ -152,21 +152,23 @@ Methods for defending against backdoor attacks include:
 | 2023 | CoRR        | [Occlusion-based Detection of Trojan-triggering Inputs in Large Language Models of Code.](./papers_en/2023-CoRR-Occlusion-based_Detection_of_Trojan-triggering_Inputs.pdf)       |                                                                                     |                      |
 | 2024 | TOSEM       | [Poison Attack and Poison Detection on Deep Source Code Processing Models.](./papers_en/2024-TOSEM-Poison_Attack_and_Poison_Detection_on_Deep_Source_Code_Processing_Models.pdf) |                                                                                     |                      |
 | 2024 | CoRR        | [Eliminating Backdoors in Neural Code Models via Trigger Inversion.](./papers_en/2024-CoRR-Eliminating_Backdoors_via_Trigger_Inversion.pdf)  🚩                                  |                                                                                     |                      |
-              |
+| 2024 | CoRR        | [Defending Code Language Models against Backdoor Attacks with Deceptive Cross-Entropy Loss.](./papers_en/2024-CoRR-DeCE.pdf)                                                     | [![Octocat](./figures/github.svg)](https://github.com/NTDXYG/DeCE)                  |                      |
+      
 
 
 
 ### Adversarial Defense
 Approaches to counter adversarial attacks include:
 
-| Year | Conf./Jour. | Paper                                                                                                         | Code Reporisty                                                            | Reproduced Reporisty |    
-|------|-------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------|
-| 2022 | SANER       | [Semantic Robustness of Models of Source Code.](./papers_en/2021-SANER-Semantic_Robustness_of_Models_of_Source_Code.pdf)                                                 | [![Octocat](./figures/github.svg)](https://github.com/jjhenkel/averloc)   |                      |
-| 2022 | COLING      | [Semantic-Preserving Adversarial Code Comprehension.](./papers_en/2022-COLING-Sematic-Preserving-Adversarial-Code-Comprehension.pdf)                                           | [![Octocat](./figures/github.svg)](https://github.com/EricLee8/SPACE)     |                      |
-| 2023 | ICSE        | [RoPGen: Towards Robust Code Authorship Attribution via Automatic Coding Style Transformation.](./papers_en/2022-ICSE-RoPGen.pdf) | [![Octocat](./figures/github.svg)](https://github.com/RoPGen/RoPGen)      |                      |
-| 2023 | PACM PL     | [Discrete Adversarial Attack to Models of Code.](./papers_en/2023-PACM_CL-Discrete_Adversarial_Attack_to_Models_of_Code.pdf)                                                |                   |                      |
-| 2023 | CCS         | [Large Language Models for Code: Security Hardening and Adversarial Testing.](./papers_en/2023-CCS-Security_Hardening_and_Adversarial_Testing.pdf)                   | [![Octocat](./figures/github.svg)](https://github.com/eth-sri/sven)       |                      |
-| 2023 | CoRR        | [Enhancing Robustness of AI Offensive Code Generators via Data Augmentation.](./papers_en/2023-CoRR-Enhancing_Robustness_of_AI_Offensive_Code_Generators_via_Data_Augmentation.pdf)                   |                    |                      |
+| Year | Conf./Jour. | Paper                                                                                                                                                                               | Code Reporisty                                                              | Reproduced Reporisty |    
+|------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------|
+| 2022 | SANER       | [Semantic Robustness of Models of Source Code.](./papers_en/2021-SANER-Semantic_Robustness_of_Models_of_Source_Code.pdf)                                                            | [![Octocat](./figures/github.svg)](https://github.com/jjhenkel/averloc)     |                      |
+| 2022 | COLING      | [Semantic-Preserving Adversarial Code Comprehension.](./papers_en/2022-COLING-Sematic-Preserving-Adversarial-Code-Comprehension.pdf)                                                | [![Octocat](./figures/github.svg)](https://github.com/EricLee8/SPACE)       |                      |
+| 2023 | ICSE        | [RoPGen: Towards Robust Code Authorship Attribution via Automatic Coding Style Transformation.](./papers_en/2022-ICSE-RoPGen.pdf)                                                   | [![Octocat](./figures/github.svg)](https://github.com/RoPGen/RoPGen)        |                      |
+| 2023 | PACM PL     | [Discrete Adversarial Attack to Models of Code.](./papers_en/2023-PACM_CL-Discrete_Adversarial_Attack_to_Models_of_Code.pdf)                                                        |                                                                             |                      |
+| 2023 | CCS         | [Large Language Models for Code: Security Hardening and Adversarial Testing.](./papers_en/2023-CCS-Security_Hardening_and_Adversarial_Testing.pdf)                                  | [![Octocat](./figures/github.svg)](https://github.com/eth-sri/sven)         |                      |
+| 2023 | CoRR        | [Enhancing Robustness of AI Offensive Code Generators via Data Augmentation.](./papers_en/2023-CoRR-Enhancing_Robustness_of_AI_Offensive_Code_Generators_via_Data_Augmentation.pdf) |                                                                             |                      |
+| 2024 | TOSEM       | [HowImportant Are Good Method Namesin NeuralCode Generation? A Model Robustness Perspective.](./papers_en/2024-TOSEM-RADAR.pdf)                                                     | [![Octocat](./figures/github.svg)](https://github.com/NTDXYG/RADAR)         |                      |
 
 
 [//]: # (## Challenges and Future Directions)
