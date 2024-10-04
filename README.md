@@ -184,7 +184,7 @@ Approaches to counter adversarial attacks include:
 If you find this repository useful for your work, please include the following citation:
 ```
 @article{xxx,
-  title={Security of Neural Code Models},
+  title={Security of Language Models for Code},
   author={xxx and xxx and xxx and xxx and xxx},
   journal={arXiv preprint arXiv:xxxxx},
   year={2024}
