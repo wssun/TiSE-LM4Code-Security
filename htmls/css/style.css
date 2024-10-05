@@ -72,14 +72,14 @@ body {
 .hero_area {
   height: 100vh;
   background-color: #b5caee;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url('../images/grey-background.png');
   background-size: cover;
 }
 
 .adv_area {
   height: 100vh;
   background-color: #b5caee;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url('../images/background.jpg');
   background-size: cover;
 }
 
@@ -100,13 +100,17 @@ body {
   padding-left: 25px;
 }
 
+.container-fluid .navbar .navbar-brand span {
+  color: #000000;
+}
+
 .header_section .nav_container {
   margin: 0 auto;
 }
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   margin: 10px 30px;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   position: relative;
 }
@@ -121,7 +125,7 @@ body {
   width: 7px;
   height: 7px;
   border-radius: 100%;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 a,
@@ -200,26 +204,39 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ffffff;
+  color: #000000;
 }
 
 .slider_section .detail-box {
+  height: 500px;
   text-align: center;
   margin-bottom: 110px;
+  color: #000;
   /* filter: blur(3px); */
 }
+
+/* .slider_section ol.custom-list li {
+  background-color: #000000;
+} */
 
 .slider_section .detail-box h1 {
   font-size: 4rem;
   text-transform: uppercase;
+  color: #000;
+  /* background-color: rgba(0, 0, 0, 0.7) ; */
 }
 
 .slider_section .detail-box h2 {
   text-transform: uppercase;
+  color: #000;
+  /* background-color: rgba(0, 0, 0, 0.7) ; */
 }
 
 .slider_section .detail-box p {
   margin-top: 25px;
+  color: #000;
+  font-size: 20px;
+  /* background-color: rgba(0, 0, 0, 0.7) ; */
 }
 
 .slider_section .detail-box a {
@@ -419,7 +436,8 @@ a:focus {
 }
 
 .client_section .box .img-box {
-  width: 60px;
+  width: 300px;
+  border-radius: 0%;
 }
 
 .client_section .box .img-box img {
@@ -456,6 +474,14 @@ a:focus {
 .client_section .box .detail-box img {
   width: 15px;
   margin: 35px 0;
+}
+
+.client_section .box .detail-box p {     
+  font-size: 10px;   
+  width: 300px; /* 设置容器宽度 */
+  white-space: nowrap; /* 指定文本不换行 */
+  overflow: hidden; /* 隐藏溢出部分的文本 */
+  text-overflow: ellipsis; /* 显示省略号 */
 }
 
 .client_section .carousel-wrap {
