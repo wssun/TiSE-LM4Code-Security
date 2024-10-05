@@ -27,7 +27,6 @@ This repository organizes the current knowledge on **Security Threats** and **De
 - [⚔Security Threats](#security-threats)
   - [Backdoor Attacks](#backdoor-attacks)
   - [Adversarial Attacks](#adversarial-attacks)
-  - [Other Attacks](#other-attacks)
 - [🛡Defensive Strategies](#defensive-strategies)
   - [Backdoor Defense](#backdoor-defense)
   - [Adversarial Defense](#adversarial-defense)
@@ -113,6 +112,7 @@ These attacks manipulate the input data to deceive the model into making incorre
 
 | Year | Conf./Jour.     | Paper                                                                                                                                                                                                                       | Code Repository                                                                               | Reproduced Repository                                            |      
 |------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| 2024 | CoRR            | [Demonstration Attack against In-Context Learning for Code Intelligence.](./papers_en/2024-CoRR-DICE.pdf)  🚩                                                                                                               |                                                                                               |                                                                  |
 | 2024 | JSEP            | [CodeBERT‐Attack: Adversarial Attack against Source Code Deep Learning Models via Pre‐trained Model.](./papers_en/2024-JSEP-CodeBERT-Attack.pdf)                                                                            |                                                                                               |                                                                  | 
 | 2024 | TOSEM           | [How Important Are Good Method Namesin NeuralCode Generation? A Model Robustness Perspective.](./papers_en/2024-TOSEM-RADAR.pdf)                                                                                            | [![Octocat](./figures/github.svg)](https://github.com/NTDXYG/RADAR)                           |                                                                  |
 | 2023 | AAAI            | [CodeAttack: Code-Based Adversarial Attacks for Pre-trained Programming Language Models.](./papers_en/2023-AAAI-CodeAttack.pdf)                                                                                             | [![Octocat](./figures/github.svg)](https://github.com/reddy-lab-code-research/CodeAttack)     |                                                                  |
@@ -137,9 +137,10 @@ These attacks manipulate the input data to deceive the model into making incorre
 | 2019 | USENIX Security | [Misleading Authorship Attribution of Source Code using Adversarial Learning.](./papers_en/2019-USENIX-Misleading_Authorship_Attribution_of_Source_Code.pdf)                                                                |                                                                                               |                                                                  |
 | 2019 | CODASPY         | [Adversarial Authorship Attribution in Open-source Projects.](./papers_en/2019-CODASPY-Adversarial_Authorship_Attribution_in_Open-source_Projects.pdf)                                                                      |                                                                                               |                                                                  |
 
+[//]: # ()
+[//]: # (### Other Threats)
 
-### Other Threats
-This includes xxx
+[//]: # (This includes xxx)
 
 ## 🛡Defensive Strategies
 In response to the growing security threats, researchers have proposed various defense mechanisms:
@@ -149,11 +150,11 @@ Methods for defending against backdoor attacks include:
 
 | Year | Conf./Jour. | Paper                                                                                                                                                                            | Code Reporisty                                                                      | Reproduced Reporisty |  
 |------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|----------------------|
-| 2022 | ICPR        | [Backdoors in Neural Models of Source Code.](./papers_en/2022-ICPR-Backdoors_in_Neural_Models_of_Source_Code.pdf)                                                                | [![Octocat](./figures/github.svg)](https://github.com/goutham7r/backdoors-for-code) |                      |
-| 2023 | CoRR        | [Occlusion-based Detection of Trojan-triggering Inputs in Large Language Models of Code.](./papers_en/2023-CoRR-Occlusion-based_Detection_of_Trojan-triggering_Inputs.pdf)       |                                                                                     |                      |
 | 2024 | TOSEM       | [Poison Attack and Poison Detection on Deep Source Code Processing Models.](./papers_en/2024-TOSEM-Poison_Attack_and_Poison_Detection_on_Deep_Source_Code_Processing_Models.pdf) |                                                                                     |                      |
 | 2024 | CoRR        | [Eliminating Backdoors in Neural Code Models via Trigger Inversion.](./papers_en/2024-CoRR-Eliminating_Backdoors_via_Trigger_Inversion.pdf)  🚩                                  |                                                                                     |                      |
 | 2024 | CoRR        | [Defending Code Language Models against Backdoor Attacks with Deceptive Cross-Entropy Loss.](./papers_en/2024-CoRR-DeCE.pdf)                                                     | [![Octocat](./figures/github.svg)](https://github.com/NTDXYG/DeCE)                  |                      |
+| 2023 | CoRR        | [Occlusion-based Detection of Trojan-triggering Inputs in Large Language Models of Code.](./papers_en/2023-CoRR-Occlusion-based_Detection_of_Trojan-triggering_Inputs.pdf)       |                                                                                     |                      |
+| 2022 | ICPR        | [Backdoors in Neural Models of Source Code.](./papers_en/2022-ICPR-Backdoors_in_Neural_Models_of_Source_Code.pdf)                                                                | [![Octocat](./figures/github.svg)](https://github.com/goutham7r/backdoors-for-code) |                      |
 
 
 
