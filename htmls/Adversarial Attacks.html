@@ -33,9 +33,10 @@
 
 <body>
 
-  <div class="adv_area">
+  <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
+      
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
           <a class="navbar-brand" href="../index.html">
@@ -67,8 +68,8 @@
                 </li> -->
               </ul>
               <div class="user_option">
-                <a href="">
-                  <img src="images/user.png" alt="">
+                <a href="member.html">
+                  <img src="images/businessman.svg" alt="" style="height: 25px;">
                 </a>
                 <!-- <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
                   <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
@@ -79,15 +80,16 @@
         </nav>
       </div>
     </header>
+    <!-- <div class="adv_pic" style="background-image: url('images/hero-bg.jpg');  height: 10%; z-index: -1;"></div> -->
     <!-- end header section -->
     <!-- slider section -->
     <section class=" slider_section position-relative">
       <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators"> 
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="border-color: #000;"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" style="border-color: black;"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" style="border-color: black;"></li>
           </ol> 
 
           <div class="carousel-inner">
@@ -96,15 +98,14 @@
                 <div class="col">
                   <div class="detail-box">
                     <div>
-                      <h2>
-                        welcome to
-
-                      </h2>
                       <h1>
                         Adversarial Attacks
                       </h1>
                       <p>
-                        一段关于对抗攻击的介绍
+                        The essence of adversarial attacks lies in crafting appropriate perturbations to exploit weaknesses in neural models. 
+                        Perturbations refer to small noise intentionally added to original input examples during the
+                        adversarial sample generation process, aiming to deceive the model during testing. According to the attacker's 
+                        knowledge of the target code neural model, adversarial attacks can be categorized into black-box and white-box attack.
                       </p>
 
                       <!-- <div class="">
@@ -123,7 +124,7 @@
               <div class="row">
                 <div class="col">
                   <div class="detail-box">
-                    <div>
+                    <!-- <div>
                       <h2>
                         welcome to
 
@@ -137,7 +138,7 @@
                       <p>
                         In white-box adversarial attacks, attackers have complete knowledge of the target model, including model structure, weight parameters, and training data. In this scenario, attackers can directly access the internal information of the target model, making it easier to understand the model’s characteristics and vulnerabilities. Attackers can generate adversarial examples in a targeted manner by analyzing model gradients, loss functions, and other information, causing the model to produce misleading outputs. White-box attacks typically involve using gradient information for backpropagation to maximize changes in input, steering the model output toward the direction expected by the attacker. With carefully designed adversarial examples, attackers can guide the model to make incorrect decisions, posing significant harm in practical applications.
                       </p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -147,7 +148,7 @@
               <div class="row">
                 <div class="col">
                   <div class="detail-box">
-                    <div>
+                    <!-- <div>
                       <h2>
                         welcome to
 
@@ -161,7 +162,7 @@
                       <p>
                         In recent years, black-box adversarial attacks in the field of neural code models have been widely studied. In contrast to white-box adversarial attacks, where the attacker has detailed information about the model’s structure and weights, black-box adversarial attacks involve attackers who cannot access such detailed information. In black-box attacks, adversaries can only generate adversarial examples by obtaining limited model outputs through model queries. The harm caused by black-box attacks primarily manifests in compromised model performance and threats to system security. In situations where detailed model information is unavailable, attackers ingeniously construct adversarial examples, potentially leading to misleading outputs from neural code models, affecting the accuracy of the model in practical tasks. This not only poses a potential threat to downstream models in software engineering tasks but may also result in serious issues in security-critical systems.
                       </p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -170,6 +171,7 @@
         </div>
 
       </div>
+      <!-- <div style="background-color: aqua; height: 20px; width: 40px;"></div> -->
     </section>
     <!-- end slider section -->
   </div>
@@ -792,24 +794,28 @@
 
 
   <script>    
-    var advArea = document.querySelector('.adv_area');
-    //var advPic = document.querySelector('adv_pic');
+    var advArea = document.querySelector('.hero_area');
+    //var advPic = document.querySelector('.adv_pic');
+    //var slideSection = document.querySelector('.slider_section');
+    //alert(slideSection)
     $('#carouselExampleIndicators').on('slid.bs.carousel', function (e) {
         // 获取当前轮播项的索引
         var currentItemIndex = e.to;
-
+        //alert(slideSection.style.backgroundImage)
         // 根据当前轮播项的索引设置背景图片
         if (currentItemIndex === 0) {
-          advArea.style.backgroundImage = "url('images/hero-bg.jpg')";
+          advArea.style.backgroundImage = "url('images/grey-background.png')";
+          //advArea.style.backgroundImage = "url('images/hero-bg.jpg')";
+          //$('.detail-box').css('color', '#fff');
         } else if (currentItemIndex === 1) {
             //advPic.style.backgroundImage = "url('images/adv-whitebox.png')";
             //advPic.style.filter = 'blur(5px)';
-            advArea.style.backgroundImage = "url('images/adv-whitebox-blur.png')";
-            $('.detail-box').css('color', '#000');
+            advArea.style.backgroundImage = "url('images/adv-whitebox-v2.png')";
+           // $('.detail-box').css('color', '#000');
         } else if (currentItemIndex === 2) { 
             //advPic.style.backgroundImage = "url('images/adv-blackbox.png')";
             //advPic.style.filter = 'blur(5px)';
-            advArea.style.backgroundImage = "url('images/adv-blackbox-blur.png')";
+            advArea.style.backgroundImage = "url('images/adv-blackbox-v2.png')";
             //advArea.style.filter = 'blur(3px)';
             //$('.detail-box').css('color', '#000');
         }

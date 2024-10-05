@@ -65,7 +65,7 @@
               </ul>
               <div class="user_option">
                 <a href="htmls/member.html">
-                  <img src="htmls/images/user.png" alt="">
+                  <img src="htmls/images/businessman.svg" alt="" style="height: 25px;">
                 </a>
                 <!-- <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
                   <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
@@ -294,18 +294,34 @@
           <div class="item">
             <div class="box">
               <div class="img-box">
-                <img src="htmls/images/c-1.png" alt="">
+                <img src="htmls/images/recent_papers/shield.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Tempor incididunt <br>
-                  <span>
-                    Dipiscing elit
-                  </span>
+                  SHIELD: Thwarting Code Authorship Attribution
                 </h5>
-                <img src="htmls/images/quote.png" alt="">
+                <!-- <img src="htmls/images/quote.png" alt=""> -->
                 <p>
-                  Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  Authorship attribution has become increasingly accurate, posing a serious privacy risk for programmers who wish
+                  to remain anonymous. In this paper, we introduce SHIELD to
+                  examine the robustness of different code authorship attribution
+                  approaches against adversarial code examples. We define four
+                  attacks on attribution techniques, which include targeted and
+                  non-targeted attacks, and realize them using adversarial code
+                  perturbation. We experiment with a dataset of 200 programmers
+                  from the Google Code Jam competition to validate our methods
+                  targeting six state-of-the-art authorship attribution methods that
+                  adopt a variety of techniques for extracting authorship traits from
+                  source-code, including RNN, CNN, and code stylometry. Our
+                  experiments demonstrate the vulnerability of current authorship
+                  attribution methods against adversarial attacks. For the nontargeted attack, our experiments demonstrate the vulnerability
+                  of current authorship attribution methods against the attack
+                  with an attack success rate exceeds 98.5% accompanied by a
+                  degradation of the identification confidence that exceeds 13%.
+                  For the targeted attacks, we show the possibility of impersonating
+                  a programmer using targeted-adversarial perturbations with a
+                  success rate ranging from 66% to 88% for different authorship
+                  attribution techniques under several adversarial scenarios.
                 </p>
               </div>
             </div>
@@ -313,18 +329,30 @@
           <div class="item">
             <div class="box">
               <div class="img-box">
-                <img src="htmls/images/c-2.png" alt="">
+                <img src="htmls/images/recent_papers/yangzhou.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Tempor incididunt <br>
-                  <span>
-                    Dipiscing elit
-                  </span>
+                  Stealthy Backdoor Attack for Code Models.
                 </h5>
-                <img src="htmls/images/quote.png" alt="">
+                <!-- <img src="htmls/images/quote.png" alt=""> -->
                 <p>
-                  Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  Code models, such as CodeBERT and CodeT5, offer general-purpose representations of code and play a vital role in
+                  supporting downstream automated software engineering tasks. Most recently, code models were revealed to be vulnerable to backdoor
+                  attacks. A code model that is backdoor-attacked can behave normally on clean examples but will produce pre-defined malicious
+                  outputs on examples injected with triggers that activate the backdoors. Existing backdoor attacks on code models use unstealthy and
+                  easy-to-detect triggers. This paper aims to investigate the vulnerability of code models with stealthy backdoor attacks. To this end, we
+                  propose AFRAIDOOR (Adversarial Feature as Adaptive Backdoor). AFRAIDOOR achieves stealthiness by leveraging adversarial
+                  perturbations to inject adaptive triggers into different inputs. We apply AFRAIDOOR to three widely adopted code models (CodeBERT,
+                  PLBART and CodeT5) and two downstream tasks (code summarization and method name prediction). We evaluate three widely used
+                  defense methods and find that AFRAIDOOR is much likely to be detected by the defense methods than baseline methods. More
+                  specifically, when using spectral signature as defense, around 85% of adaptive triggers in AFRAIDOOR bypass the detection in the
+                  defense process. By contrast, only less than 12% of the triggers from previous work bypass the defense. When the defense method is
+                  not applied, both AFRAIDOOR and baselines have almost perfect attack success rates. However, once a defense is applied, the attack
+                  success rates of baselines decrease dramatically, while the success rate of AFRAIDOOR still remains high. Our finding exposes security
+                  weaknesses in code models under stealthy backdoor attacks and shows that the state-of-the-art defense method cannot provide
+                  sufficient protection. We call for more research efforts in understanding security threats to code models and developing more effective
+                  countermeasures.
                 </p>
               </div>
             </div>
@@ -332,18 +360,15 @@
           <div class="item">
             <div class="box">
               <div class="img-box">
-                <img src="htmls/images/c-3.png" alt="">
+                <img src="htmls/images/recent_papers/CODA.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Tempor incididunt <br>
-                  <span>
-                    Dipiscing elit
-                  </span>
+                  Code Difference Guided Adversarial Example Generation for Deep Code Models
                 </h5>
-                <img src="htmls/images/quote.png" alt="">
+                <!-- <img src="htmls/images/quote.png" alt=""> -->
                 <p>
-                  Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  Adversarial examples are important to test and enhance the robustness of deep code models. As source code is discrete and has to strictly stick to complex grammar and semantics constraints, the adversarial example generation techniques in other domains are hardly applicable. Moreover, the adversarial example generation techniques specific to deep code models still suffer from unsatisfactory effectiveness due to the enormous ingredient search space. In this work, we propose a novel adversarial example generation technique (i.e., CODA) for testing deep code models. Its key idea is to use code differences between the target input (i.e., a given code snippet as the model input) and reference inputs (i.e., the inputs that have small code differences but different prediction results with the target input) to guide the generation of adversarial examples. It considers both structure differences and identifier differences to preserve the original semantics. Hence, the ingredient search space can be largely reduced as the one constituted by the two kinds of code differences, and thus the testing process can be improved by designing and guiding corresponding equivalent structure transformations and identifier renaming transformations. Our experiments on 15 deep code models demonstrate the effectiveness and efficiency of CODA, the naturalness of its generated examples, and its capability of enhancing model robustness after adversarial fine-tuning. For example, CODA reveals 88.05% and 72.51% more faults in models than the state-of-the-art techniques (i.e., CARROT and ALERT) on average, respectively.
                 </p>
               </div>
             </div>
