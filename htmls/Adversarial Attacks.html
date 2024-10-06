@@ -69,7 +69,7 @@
               </ul>
               <div class="user_option">
                 <a href="member.html">
-                  <img src="images/businessman.svg" alt="" style="height: 25px;">
+                  <img src="images/user.png" alt="" style="height: 25px;">
                 </a>
                 <!-- <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
                   <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
@@ -87,9 +87,9 @@
       <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators"> 
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="border-color: #000;"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1" style="border-color: black;"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2" style="border-color: black;"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol> 
 
           <div class="carousel-inner">
@@ -102,12 +102,17 @@
                         Adversarial Attacks
                       </h1>
                       <p>
-                        The essence of adversarial attacks lies in crafting appropriate perturbations to exploit weaknesses in neural models. 
-                        Perturbations refer to small noise intentionally added to original input examples during the
-                        adversarial sample generation process, aiming to deceive the model during testing. According to the attacker's 
-                        knowledge of the target code neural model, adversarial attacks can be categorized into black-box and white-box attack.
+                        &nbsp;&nbsp;&nbsp;&nbsp;Adversarial attacks primarily occur during the model testing phase. The
+                        attacker intentionally introduces small but malicious perturbations to input samples, which can
+                        highly likely lead to misclassification by the classifier. The core of adversarial attacks lies in 
+                        crafting adversarial examples that can induce neural models to make incorrect classifications. Once
+                        constructed, adversarial examples are inputted into the target model just like normal samples, aiming
+                        to deceive the model's decision-making process and thus tricking the target model.
                       </p>
 
+                      <div class="img-box">
+                        <img src="images/adv-workflow.png">
+                      </div>
                       <!-- <div class="">
                         <a href="">
                           Contact us
@@ -124,21 +129,17 @@
               <div class="row">
                 <div class="col">
                   <div class="detail-box">
-                    <!-- <div>
-                      <h2>
-                        welcome to
-
-                      </h2>
-                      <h1>
-                        Adversarial Attacks
-                      </h1>
-                      <p>
+                    <div class="img-box">
+                        <img src="images/adv-whitebox.png">
+                    </div>
+                    <div>
+                      <h3>
                         WhiteBox Attacks
-                      </p>
+                      </h3>
                       <p>
                         In white-box adversarial attacks, attackers have complete knowledge of the target model, including model structure, weight parameters, and training data. In this scenario, attackers can directly access the internal information of the target model, making it easier to understand the model’s characteristics and vulnerabilities. Attackers can generate adversarial examples in a targeted manner by analyzing model gradients, loss functions, and other information, causing the model to produce misleading outputs. White-box attacks typically involve using gradient information for backpropagation to maximize changes in input, steering the model output toward the direction expected by the attacker. With carefully designed adversarial examples, attackers can guide the model to make incorrect decisions, posing significant harm in practical applications.
                       </p>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
               </div>
@@ -148,21 +149,17 @@
               <div class="row">
                 <div class="col">
                   <div class="detail-box">
-                    <!-- <div>
-                      <h2>
-                        welcome to
-
-                      </h2>
-                      <h1>
-                        Adversarial Attacks
-                      </h1>
-                      <p>
+                    <div class="img-box">
+                        <img src="images/adv-blackbox.png">
+                    </div>
+                    <div>
+                      <h3>
                         BlackBox Attacks
-                      </p>
+                      </h3>
                       <p>
                         In recent years, black-box adversarial attacks in the field of neural code models have been widely studied. In contrast to white-box adversarial attacks, where the attacker has detailed information about the model’s structure and weights, black-box adversarial attacks involve attackers who cannot access such detailed information. In black-box attacks, adversaries can only generate adversarial examples by obtaining limited model outputs through model queries. The harm caused by black-box attacks primarily manifests in compromised model performance and threats to system security. In situations where detailed model information is unavailable, attackers ingeniously construct adversarial examples, potentially leading to misleading outputs from neural code models, affecting the accuracy of the model in practical tasks. This not only poses a potential threat to downstream models in software engineering tasks but may also result in serious issues in security-critical systems.
                       </p>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
               </div>
@@ -176,79 +173,9 @@
     <!-- end slider section -->
   </div>
 
-
-  <!-- work section -->
-  <section class="work_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Introduction
-        </h2>
-        <p>
-          <h4>White-box Attacks </h4> 
-          In white-box adversarial attacks, attackers have complete knowledge of
-          the target model, including model structure, weight parameters, and training data. In this scenario,
-          attackers can directly access the internal information of the target model, making it easier to
-          understand the model’s characteristics and vulnerabilities. Attackers can generate adversarial
-          examples in a targeted manner by analyzing model gradients, loss functions, and other information,
-          causing the model to produce misleading outputs. White-box attacks typically involve using gradient
-          information for backpropagation to maximize changes in input, steering the model output toward
-          the direction expected by the attacker. With carefully designed adversarial examples, attackers
-          can guide the model to make incorrect decisions, posing significant harm in practical applications
-          <br>
-          <br>
-          <h4>Black-box Attacks </h4> 
-          In recent years, black-box adversarial attacks in the field of neural code
-          models have been widely studied. In contrast to white-box adversarial attacks, where the attacker
-          has detailed information about the model’s structure and weights, black-box adversarial attacks
-          involve attackers who cannot access such detailed information. In black-box attacks, adversaries
-          can only generate adversarial examples by obtaining limited model outputs through model queries.
-          The harm caused by black-box attacks primarily manifests in compromised model performance and
-          threats to system security. In situations where detailed model information is unavailable, attackers
-          ingeniously construct adversarial examples, potentially leading to misleading outputs from neural
-          code models, affecting the accuracy of the model in practical tasks. This not only poses a potential
-          threat to downstream models in software engineering tasks but may also result in serious issues in
-          security-critical systems.
-        </p>
-        <!-- <h2>
-          RENCENT WORKS
-        </h2>
-        <p>
-          Figure1(upper left corner): 《SHIELD: Thwarting Code Authorship Attribution》In 2023, Abuhamad et al. [3] introduce SHIELD to attack the code authorship attribution system,
-          demonstrating the insufficient robustness of current code authorship attribution systems. SHIELD
-          injects carefully selected code samples into the target source code and then applies a code-to-code
-          obfuscator [] for obfuscation. SHIELD employs obfuscation to make it challenging for models to
-          statically identify or remove the injected code portions, rather than solely conceal the identity of the
-          code author. Adversarial samples are inputted into a black-box code authorship attribution system,
-          and then the probability distribution of the identification model is modified by SHIELD through
-          altering the code expressions and statements of the adversarial samples. SHIELD achieves a success
-          rate of over 95.5% in non-targeted attacks, with a decrease in model identification confidence of
-          over 13%. In targeted attacks, SHIELD achieves an attack success rate of over 66%.This indicates
-          that the current authorship attribution system is highly susceptible to the influence of adversarial
-          samples.
-        </p> -->
-      </div>
-      <!-- <div class="work_container layout_padding2">
-        <div class="box b-1">
-          <img src="images/class1_papers/SHIELD.png" alt="">
-        </div>
-        <div class="box b-2">
-          <img src="images/class1_papers/paper2.png" alt="">
-        </div>
-        <div class="box b-3">
-          <img src="images/class1_papers/paper3.png" alt="">
-
-        </div>
-        <div class="box b-4">
-          <img src="images/class1_papers/paper1.png" alt="">
-        </div>
-      </div> -->
-    </div>
-  </section>
-
   <section>
     <div class="container mt-5">
-      <h2>Datasets used in adversarial research on NCMs</h2>
+      <h2>Datasets used in adversarial research on LM4Code</h2>
       <table class="table table-bordered table-striped table-hover">
         <thead class="thead-dark">
           <tr>
@@ -294,7 +221,106 @@
             <td> <a href=" https://github.com/github/CodeSearchNet">Download</a></td>
             <td>XXX</td>
           </tr>
-
+          <tr>
+            <td>Code2Seq</td>
+            <td>2019</td>
+            <td>Java
+            </td>
+            <td> GitHub </td>
+            <td> <a href=" https://github.com/tech-srl/code2seq#datasets">Download</a></td>
+            <td>XXX</td>
+          </tr>          
+          <tr>
+            <td>Devign</td>
+            <td>2019</td>
+            <td>Java
+            </td>
+            <td> GitHub </td>
+            <td> <a href=" https://github.com/rjust/defects4j">Download</a></td>
+            <td>XXX</td>
+          </tr>       
+          <tr>
+            <td>Google Code Jam (GCJ)</td>
+            <td>2020</td>
+            <td>C++ <br>
+                Java
+            </td>
+            <td> OJ Platform </td>
+            <td> <a href=" https://codingcompetitions.withgoogle.com/codejam">Download</a></td>
+            <td>XXX</td>
+          </tr>       
+          <tr>
+            <td>CodeXGLUE</td>
+            <td>2021</td>
+            <td>Go <br>
+                Java <br>
+                JavaScript <br>
+                PHP <br>
+                Python <br>
+                Ruby <br>
+            </td>
+            <td> GitHub </td>
+            <td> <a href=" https://github.com/microsoft/CodeXGLUE">Download</a></td>
+            <td>XXX</td>
+          </tr>       
+          <tr>
+            <td>CodeQA</td>
+            <td>2021</td>
+            <td>Java <br>
+                Python
+            </td>
+            <td> GitHub </td>
+            <td> <a href=" https://github.com/jadecxliu/codeqa">Download</a></td>
+            <td>XXX</td>
+          </tr>       
+          <tr>
+            <td>APPS</td>
+            <td>2021</td>
+            <td>Python
+            </td>
+            <td> OJ Platform </td>
+            <td> <a href=" https://people.eecs.berkeley.edu/hendrycks/APPS.tar.gz">Download</a></td>
+            <td>XXX</td>
+          </tr>      
+          <tr>
+            <td>Shellcode_IA32</td>
+            <td>2021</td>
+            <td>assembly language instruction
+            </td>
+            <td> OJ Platform </td>
+            <td> <a href=" https://github.com/dessertlab/Shellcode_IA32">Download</a></td>
+            <td>XXX</td>
+          </tr>      
+          <tr>
+            <td>SecurityEval</td>
+            <td>2022</td>
+            <td>Python
+            </td>
+            <td> GitHub </td>
+            <td> <a href=" https://github.com/s2e-lab/SecurityEval">Download</a></td>
+            <td>XXX</td>
+          </tr>      
+          <tr>
+            <td>LLMSecEval</td>
+            <td>2023</td>
+            <td>Python<br>
+              C
+            </td>
+            <td> GitHub </td>
+            <td> <a href=" https://github.com/tuhh-softsec/LLMSecEval">Download</a></td>
+            <td>XXX</td>
+          </tr>      
+          <tr>
+            <td>PoisonPy</td>
+            <td>2023</td>
+            <td>Python
+            </td>
+            <td> GitHub </td>
+            <td> 
+              not yet published
+            </td>
+            <td>XXX</td>
+          </tr>
 
         </tbody>
       </table>
@@ -303,7 +329,7 @@
 
   <section>
     <div class="container mt-5">
-      <h2> A summary of existing adversarial attacks in NCMs</h2>
+      <h2> A summary of target models of adversarial attacks in LM4Code</h2>
       <table class="table table-bordered table-striped table-hover">
         <thead class="thead-dark">
           <tr>
@@ -793,33 +819,7 @@
 
 
 
-  <script>    
-    var advArea = document.querySelector('.hero_area');
-    //var advPic = document.querySelector('.adv_pic');
-    //var slideSection = document.querySelector('.slider_section');
-    //alert(slideSection)
-    $('#carouselExampleIndicators').on('slid.bs.carousel', function (e) {
-        // 获取当前轮播项的索引
-        var currentItemIndex = e.to;
-        //alert(slideSection.style.backgroundImage)
-        // 根据当前轮播项的索引设置背景图片
-        if (currentItemIndex === 0) {
-          advArea.style.backgroundImage = "url('images/grey-background.png')";
-          //advArea.style.backgroundImage = "url('images/hero-bg.jpg')";
-          //$('.detail-box').css('color', '#fff');
-        } else if (currentItemIndex === 1) {
-            //advPic.style.backgroundImage = "url('images/adv-whitebox.png')";
-            //advPic.style.filter = 'blur(5px)';
-            advArea.style.backgroundImage = "url('images/adv-whitebox-v2.png')";
-           // $('.detail-box').css('color', '#000');
-        } else if (currentItemIndex === 2) { 
-            //advPic.style.backgroundImage = "url('images/adv-blackbox.png')";
-            //advPic.style.filter = 'blur(5px)';
-            advArea.style.backgroundImage = "url('images/adv-blackbox-v2.png')";
-            //advArea.style.filter = 'blur(3px)';
-            //$('.detail-box').css('color', '#000');
-        }
-    });
+  <script>
 
     const jsonData = {
       "papers": [
@@ -873,22 +873,84 @@
                                   and Clone Detection",
                   "link": "https://arxiv.org/pdf/2308.11161"
                 },
-                // {
-                //   "id": 4,
-                //   "title": "Understanding LLMs through the Lens of Privacy",
-                //   "authors": "Wang Er, Zhang San, Li Si",
-                //   "imgSrc": "images/class1_papers/paper1.png",
-                //   "description": "This paper discusses the privacy implications of large language models. We analyze the potential risks of data exposure and provide recommendations for enhancing the privacy of LLM applications.",
-                //   "link": "empty.html"
-                // },
-                // {
-                //   "id": 5,
-                //   "title": "The Future of LLMs in Autonomous Systems",
-                //   "authors": "Zhao Liu, Hu Ran, Gao Bai",
-                //   "imgSrc": "images/class1_papers/paper2.png",
-                //   "description": "The integration of LLMs into autonomous systems offers new possibilities for advanced decision-making and natural interaction. This paper examines the current state and future potential of LLMs in this domain.",
-                //   "link": "empty.html"
-                // }
+                {
+                  "id": 4,
+                  "title": "Misleading Authorship Attribution of Source Code using Adversarial Learning",
+                  "authors": "Authors: Erwin Quiring, Alwin Maier, Konrad Rieck",
+                  "imgSrc": "images/class1_papers/GraphCodeAttack.png",
+                  "description": "In this paper, we present a novel attack against authorship \
+                                  attribution of source code. We exploit that recent attribution \
+                                  methods rest on machine learning and thus can be deceived \
+                                  by adversarial examples of source code. Our attack performs \
+                                  a series of semantics-preserving code transformations that \
+                                  mislead learning-based attribution but appear plausible to a developer. \
+                                  The attack is guided by Monte-Carlo tree search that \
+                                  enables us to operate in the discrete domain of source code. \
+                                  In an empirical evaluation with source code from 204 programmers, we demonstrate that our attack has a substantial \
+                                  effect on two recent attribution methods, whose accuracy \
+                                  drops from over 88% to 1% under attack. Furthermore, we \
+                                  show that our attack can imitate the coding style of developers \
+                                  with high accuracy and thereby induce false attributions. We \
+                                  conclude that current approaches for authorship attribution \
+                                  are inappropriate for practical application and there is a need \
+                                  for resilient analysis techniques.",
+                  "link": "https://www.usenix.org/system/files/sec19-quiring.pdf"
+                },
+                {
+                  "id": 5,
+                  "title": "Adversarial Examples for Models of Code",
+                  "authors": "Authors: Erwin Quiring, Alwin Maier, Konrad Rieck",
+                  "imgSrc": "images/class1_papers/GraphCodeAttack.png",
+                  "description": "Neural models of code have shown impressive results when performing tasks such as predicting method names and identifying certain kinds of bugs. \
+                  We show that these models are vulnerable to adversarial examples, \
+                  and introduce a novel approach for attacking trained models of code using adversarial examples. \
+                  The main idea of our approach is to force a given trained model to make an incorrect prediction, \
+                  as specified by the adversary, by introducing small perturbations that do not change the program's semantics, \
+                  thereby creating an adversarial example. To find such perturbations, \
+                  we present a new technique for Discrete Adversarial Manipulation of Programs (DAMP). \
+                  DAMP works by deriving the desired prediction with respect to the model's inputs, \
+                  while holding the model weights constant, and following the gradients to slightly modify the input code. \
+                  We show that our DAMP attack is effective across three neural architectures: code2vec, GGNN, and GNN-FiLM, \
+                  in both Java and C#. Our evaluations demonstrate that DAMP has up to 89% success rate in changing a prediction to the adversary's choice (a targeted attack) and a success rate of up to 94% in changing a given prediction to any incorrect prediction (a non-targeted attack). To defend a model against such attacks, we empirically examine a variety of possible defenses and discuss their trade-offs. We show that some of these defenses can dramatically drop the success rate of the attacker, with a minor penalty of 2% relative degradation in accuracy when they are not performing under attack.",
+                  "link": "https://arxiv.org/pdf/1910.07517"
+                },
+                {
+                  "id": 6,
+                  "title": "CodeAttack: Code-Based Adversarial Attacks for Pre-trained Programming Language Models",
+                  "authors": "Authors: Akshita Jha, Chandan K. Reddy",
+                  "imgSrc": "images/class1_papers/codeattack.png",
+                  "description": "Pre-trained programming language (PL) models (such as CodeT5, CodeBERT, GraphCodeBERT, etc.,) have the potential to automate software engineering tasks involving code understanding and code generation. However, these models operate in the natural channel of code, i.e., they are primarily concerned with the human understanding of the code. They are not robust to changes in the input and thus, are potentially susceptible to adversarial attacks in the natural channel. We propose, CodeAttack, a simple yet effective black-box attack model that uses code structure to generate effective, efficient, and imperceptible adversarial code samples and demonstrates the vulnerabilities of the state-of-the-art PL models to code-specific adversarial attacks. We evaluate the transferability of CodeAttack on several code-code (translation and repair) and code-NL (summarization) tasks across different programming languages. CodeAttack outperforms state-of-the-art adversarial NLP attack models to achieve the best overall drop in performance while being more efficient, imperceptible, consistent, and fluent. The code can be found at this https URL.",
+                  "link": "https://arxiv.org/pdf/2206.00052"
+                },
+                {
+                  "id": 7,
+                  "title": "Adversarial Robustness of Deep Code Comment Generation",
+                  "authors": "Authors: Yu Zhou, Xiaoqing Zhang, Juanjuan Shen, Tingting Han, Taolue Chen, Harald Gall",
+                  "imgSrc": "images/class1_papers/accent.png",
+                  "description": "Deep neural networks (DNNs) have shown remarkable performance in a variety of domains such as computer vision, speech recognition, or natural language processing. Recently they also have been applied to various software engineering tasks, typically involving processing source code. DNNs are well-known to be vulnerable to adversarial examples, i.e., fabricated inputs that could lead to various misbehaviors of the DNN model while being perceived as benign by humans. In this paper, we focus on the code comment generation task in software engineering and study the robustness issue of the DNNs when they are applied to this task. We propose ACCENT, an identifier substitution approach to craft adversarial code snippets, which are syntactically correct and semantically close to the original code snippet, but may mislead the DNNs to produce completely irrelevant code comments. In order to improve the robustness, ACCENT also incorporates a novel training method, which can be applied to existing code comment generation models. We conduct comprehensive experiments to evaluate our approach by attacking the mainstream encoder-decoder architectures on two large-scale publicly available datasets. The results show that ACCENT efficiently produces stable attacks with functionality-preserving adversarial examples, and the generated examples have better transferability compared with baselines. We also confirm, via experiments, the effectiveness in improving model robustness with our training method.",
+                  "link": "https://arxiv.org/pdf/2108.00213"
+                },
+                {
+                  "id": 8,
+                  "title": "AdVulCode: Generating Adversarial Vulnerable Code against Deep Learning-Based Vulnerability Detectors",
+                  "authors": "Authors: Xueqi Yu, Zhen Li, Xiang Huang, Shasha Zhao",
+                  "imgSrc": "images/class1_papers/advulcode.png",
+                  "description": "Deep learning-based vulnerability detection models have received widespread attention; \
+                                  however, these models are susceptible to adversarial attack, and adversarial examples are a primary \
+                                  research direction to improve the robustness of the models. There are three main categories of \
+                                  adversarial example generation methods for source code tasks: changing identifier names, adding \
+                                  dead code, and changing code structure. However, these methods cannot be directly applied to \
+                                  vulnerability detection. Therefore, we propose the first study of adversarial attack on vulnerability \
+                                  detection models. Specifically, we utilize equivalent transformations to generate candidate statements \
+                                  and introduce an improved Monte Carlo tree search algorithm to guide the selection of candidate \
+                                  statements to generate adversarial examples. In addition, we devise a black-box approach that \
+                                  can be applied to widespread vulnerability detection models. The experimental results show that \
+                                  our approach achieves attack success rates of 16.48%, 27.92%, and 65.20%, respectively, in three \
+                                  vulnerability detection models with different levels of granularity. Compared with the state-of-the-art \
+                                  source code attack method ALERT, our method can handle models with identifier name mapping, \
+                                  and our attack success rate is 27.59% higher on average than ALERT.", 
+                  "link": "https://www.mdpi.com/2079-9292/12/4/936"
+                }
           ],
       "totalPages": 5
     }
