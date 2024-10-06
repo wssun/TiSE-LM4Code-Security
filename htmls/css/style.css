@@ -226,7 +226,7 @@ a:focus {
 }
 
 .slider_section .detail-box .img-box {
-  width: 600px;
+  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,7 +237,7 @@ a:focus {
 }
 
 .slider_section .detail-box .img-box img {
-  width: 100%;
+  width: 50%;
 }
 
 
