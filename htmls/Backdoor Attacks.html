@@ -38,11 +38,6 @@
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand" href="../index.html">
-            <span>
-              Backdoor Attacks
-            </span>
-          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -53,9 +48,9 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About </a>
-                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="Adversarial Attacks.html"> Adversarial Attack </a>
+                </li>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="do.html"> What we do </a>
                 </li>
@@ -67,8 +62,8 @@
                 </li> -->
               </ul>
               <div class="user_option">
-                <a href="member.html">
-                  <img src="images/user.png" alt="" style="height: 25px;">
+                <a href="member.html" style="color: #fff;">
+                  <img src="images/user.png" alt="" style="height: 25px;">Group Members
                 </a>
                 <!-- <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
                   <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
@@ -128,13 +123,13 @@
               <div class="row">
                 <div class="col">
                   <div class="detail-box">
-                    <div>
+                    <div>                  
+                      <h2>
+                        Data Poisoning
+                      </h2>
                       <div class="img-box">
                         <img src="images/backdoor-data-poisoning.png">
-                      </div>                      
-                      <h3>
-                        Data Poisoning
-                      </h3>
+                      </div>  
                       <p>
                         Data poisoning primarily occurs during the data collection phase before model training. 
                         The premise of data poisoning is that the attacker can obtain a portion of training data. 
@@ -146,7 +141,7 @@
                         For any input containing the backdoor trigger, the model predicts the attacker's specified target output. 
                         For clean data, the model still learns the features of the data itself and can output correct predictions.
                       </p>
-                    </div>
+                    </div>  
                   </div>
                 </div>
               </div>
@@ -156,12 +151,12 @@
               <div class="row">
                 <div class="col">
                   <div class="detail-box">
+                    <h2>
+                      Model Poisoning
+                    </h2>
                     <div class="img-box">
                       <img src="images/backdoor-model-poisoning.png">
                     </div>
-                    <h3>
-                      Model Poisoning
-                    </h3>
                     <p>
                       Model poisoning primarily occurs during the model training phase. The main distinction between model poisoning and data poisoning lies in the attacker's ability to control the model's training process. Similar to data poisoning, attacker first poisons the training data. Subsequently, the poisoned data are used to train a poisoned pre-trained model, which is then published on a open platform such as Hugging Face. Users or developers download and use these poisoned the pre-trained model for training or fine-tuning a downstream task model as needed. Research indicates that even after fine-tuning with clean data, the model still contain backdoors implanted by the attacker. Consequently, the attacker can launch attacks on the downstream task model using inputs containing the backdoor trigger, resulting in the output of the attacker's desired results. 
                     </p>
@@ -178,9 +173,54 @@
     <!-- end slider section -->
   </div>
 
+
+
+  <!-- <section class="work_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Papers
+        </h2>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- end work section -->
+  <section class="who_section">
+    
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+            <!-- 内容展示区域 -->
+            <div id="contentArea" class="content-item">
+                <!-- 动态加载内容 -->
+            </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-12">
+              <!-- 分页组件 -->
+              <nav aria-label="Pagination example">
+                  <ul class="pagination" id="pagination">
+                    <!-- 分页链接将在这里动态生成 -->
+                  </ul>
+
+              </nav>
+          </div>
+      </div>
+
+    </div>
+
+    
+
+
+  </section>
+
   <section>
     <div class="container mt-5">
-      <h2>Datasets used in backdoor research on LM4Code</h2>
+      <h2>Datasets used in backdoor research on CodeLMs</h2>
       <table class="table table-bordered table-striped table-hover">
         <thead class="thead-dark">
           <tr>
@@ -331,10 +371,11 @@
       </table>
     </div>
   </section>
-
+  
+  <!-- target model section -->
   <section>
     <div class="container mt-5">
-      <h2> A summary of target models of backdoor attacks in LM4Code</h2>
+      <h2> A summary of target models of backdoor attacks in CodeLMs</h2>
       <table class="table table-bordered table-striped table-hover">
         <thead class="thead-dark">
           <tr>
@@ -482,267 +523,11 @@
             <td>BiRNN<br> Transformer<br> CodeBERT<br> GraphCodeBERT</td>
             <td>Code Search</td>
           </tr>
-
-
-
         </tbody>
       </table>
     </div>
   </section>
-
-  <!-- <section class="work_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Papers
-        </h2>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- end work section -->
-  <section class="who_section">
-    
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12">
-            <!-- 内容展示区域 -->
-            <div id="contentArea" class="content-item">
-                <!-- 动态加载内容 -->
-            </div>
-        </div>
-      </div>
-
-
-        <!-- <div class="row">
-          <div class="col-md-5">
-            <div class="img-box">
-              <img src="images/class1_papers/paper1.png" alt="">
-            </div>
-          </div>
-          <div class="col-md-7">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>
-                  Data-efficient Fine-tuning for LLM-based Recommendation
-                </h2>
-              </div>
-              <p>
-                <h3> Authors:  </h3>
-                Xinyin Ma, Gongfan Fang, Xinchao Wang
-              </p>
-
-              <p>
-                Large language models (LLMs) have shown remarkable capabilities in language 
-                understanding and generation. However, such impressive capability typically 
-                comes with a substantial model size, which presents significant challenges 
-                in both the deployment, inference, and training stages. With LLM being a 
-                general-purpose task solver, we explore its compression in a task-agnostic 
-                manner, which aims to preserve the multi-task solving and language generation 
-                ability of the original LLM. One challenge to achieving this is the enormous 
-                size of the training corpus of LLM, which makes both data transfer and model 
-                post-training over-burdensome. Thus, we tackle the compression of LLMs within 
-                the bound of two constraints: being task-agnostic and minimizing the reliance 
-                on the original training dataset. Our method, named LLM-pruner, adopts structural 
-                pruning that selectively removes non-critical coupled structures based on gradient 
-                information, maximally preserving the majority of the LLM's functionality. 
-                To this end, the performance of pruned models can be efficiently recovered through 
-                tuning techniques, LoRA, in merely 3 hours, requiring only 50K data. We validate 
-                the LLM-Pruner on three LLMs, including LLaMA, Vicuna, and ChatGLM, and demonstrate 
-                that the compressed models still exhibit satisfactory capabilities in zero-shot 
-                classification and generation. The code will be made public.
-              </p>
-              <div>
-                <a href="class1.html">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-5">
-            <div class="img-box">
-              <img src="images/who-img.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-md-7">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>
-                  Paper Classification2
-                </h2>
-              </div>
-              <p>
-                第二个论文介绍语
-              </p>
-              <div>
-                <a href="class2.html">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-5">
-            <div class="img-box">
-              <img src="images/who-img.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-md-7">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>
-                  Paper Classification3
-                </h2>
-              </div>
-              <p>
-                第三个论文介绍语
-              </p>
-              <div>
-                <a href="class3.html">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-      <div class="row">
-          <div class="col-md-12">
-              <!-- 分页组件 -->
-              <nav aria-label="Pagination example">
-                  <ul class="pagination" id="pagination">
-                    <!-- 分页链接将在这里动态生成 -->
-                  </ul>
-
-              </nav>
-          </div>
-      </div>
-
-    </div>
-
-    
-
-
-  </section>
-
-
-
-
-  <!-- client section -->
-  <!-- <section class="client_section">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Paper display
-        </h2>
-      </div>
-      <div class="carousel-wrap ">
-        <div class="owl-carousel">
-
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/c-1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  A survey on large language model (llm) security and privacy: The good, the bad, and the ugly <br>
-                  <span>
-                    Y Yao, J Duan, K Xu, Y Cai
-                  </span>
-                </h5>
-                <img src="images/quote.png" alt="">
-                <p>
-                  Large Language Models (LLMs), such as ChatGPT and Bard, 
-                  have revolutionized natural language understanding and generation. 
-                  They possess deep language comprehension, human-like text generation capabilities, 
-                  contextual awareness, and robust problem-solving skills, making them invaluable 
-                  in various domains (e.g., search engines, customer support, translation). 
-                  In the meantime, LLMs have also gained traction in the security community, 
-                  revealing security vulnerabilities and showcasing their potential in security-related tasks. 
-                  This paper explores the intersection of LLMs with security and privacy. 
-                  Specifically, we investigate how LLMs positively impact security and privacy, potential 
-                  risks and threats associated with their use, and inherent vulnerabilities within LLMs. 
-                  Through a comprehensive literature review, the paper categorizes the papers 
-                  into “The Good” (beneficial LLM applications), “The Bad” (offensive applications), 
-                  and “The Ugly” (vulnerabilities of LLMs and their defenses). 
-                  We have some interesting findings. For example, LLMs have proven to enhance code security 
-                  (code vulnerability detection) and data privacy (data confidentiality protection), 
-                  outperforming traditional methods. However, they can also be harnessed for various 
-                  attacks (particularly user-level attacks) due to their human-like reasoning abilities. 
-                  We have identified areas that require further research efforts. For example, Research on 
-                  model and parameter extraction attacks is limited and often theoretical, hindered by LLM 
-                  parameter scale and confidentiality. Safe instruction tuning, a recent development, 
-                  requires more exploration. We hope that our work can shed light on the LLMs' potential 
-                  to both bolster and jeopardize cybersecurity.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/c-2.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Tempor incididunt <br>
-                  <span>
-                    Dipiscing elit
-                  </span>
-                </h5>
-                <img src="images/quote.png" alt="">
-                <p>
-                  Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/c-3.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Tempor incididunt <br>
-                  <span>
-                    Dipiscing elit
-                  </span>
-                </h5>
-                <img src="images/quote.png" alt="">
-                <p>
-                  Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- end client section -->
-
-  <!-- target section -->
-
-  <!-- end target section -->
-
-
-  <!-- contact section -->
-
-
-  <!-- end contact section -->
+  <!-- end target model section -->
 
   <!-- footer section -->
   <section class="container-fluid footer_section">
@@ -925,7 +710,7 @@
                 <h2>${paper.title}</h2>
               </div>
               <p>${paper.authors}</p>
-              <p>${paper.description}</p>
+              <p class="content">${paper.description}</p>
               <div>
                 <a href="${paper.link}">Read More</a>
               </div>
