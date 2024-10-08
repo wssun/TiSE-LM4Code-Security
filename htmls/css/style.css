@@ -2,6 +2,11 @@ body {
   font-family: "Poppins", sans-serif;
   color: #000000;
   background-color: #ffffff;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0; */
 }
 
 .layout_padding {
@@ -53,7 +58,7 @@ body {
   top: 50%;
   width: 40px;
   height: 1px;
-  background-color: #fec016;
+  /* background-color: #fec016; */
 }
 
 .heading_container h2::before {
@@ -130,6 +135,9 @@ body {
   background-color: #fff;
 }
 
+.container {
+  background-color: #fff;
+}
 
 .container .team-members a {
   width: 250px;
@@ -213,7 +221,7 @@ a:focus {
 /*end header section*/
 .slider_section {
   margin-top: 50px;
-  height: 90%;
+  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,7 +232,7 @@ a:focus {
 }
 
 .slider_section .detail-box {
-  height: 500px;
+  height: 50%;
   text-align: left;
   margin-bottom: 110px;
   color: #000;
@@ -232,7 +240,7 @@ a:focus {
 }
 
 .slider_section .detail-box .img-box {
-  width: 1300px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,20 +383,25 @@ a:focus {
   background-image: url(../images/arrow-end.png);
 }
 
-.who_section {
-  margin-top: 50px;
+.table-container .who_section {
+  margin: 0 auto; /* Center the section */
+  /* margin-top: 50px; */
+  width: 80%; /* Adjust the width to leave more space on the sides */
+  padding: 20px;
+  background-color: #fff;
 }
 
 
-.who_section .row {
+.table-container .who_section .row {
   margin-top: 50px;
   margin-bottom: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* width: 50%; */
 }
 
-.who_section .row .detail-box .content{
+.table-container .who_section .row .detail-box .content{
   width: 100%;
   height: 100px;
   white-space: nowrap;        /* 不换行 */
@@ -396,25 +409,25 @@ a:focus {
   text-overflow: ellipsis;    /* 显示省略号 */
 }
 
-.who_section .img-box img {
+.table-container .who_section .img-box img {
   /* width: 100%; */
   height: 100%;
 }
 
 
-.who_section .img-box img {
+.table-container .who_section .img-box img {
   width: 100%;
 }
 
-.who_section .detail-box {
+.table-container .who_section .detail-box {
   margin-left: 65px;
 }
 
-.who_section .detail-box p {
+.table-container .who_section .detail-box p {
   margin-top: 35px;
 }
 
-.who_section .detail-box a {
+.table-container .who_section .detail-box a {
   display: inline-block;
   padding: 8px 30px;
   background-color: #353434;
@@ -424,9 +437,23 @@ a:focus {
   margin-top: 35px;
 }
 
-.who_section .detail-box a:hover {
+.table-container .who_section .detail-box a:hover {
   background-color: transparent;
   color: #353434;
+}
+
+.table-container .table {
+  margin: 0 auto; /* Center the section */
+  width: 80%; /* Adjust the width to leave more space on the sides */
+  padding: 20px;
+  background-color: #fff; /* Optional: add a semi-transparent background */
+}
+
+.table-container {
+  background-image: url('images/grey-background.png');
+  background-size: cover; /* Adjust the background size as needed */
+  background-position: center;
+  padding: 0; /* Adjust the padding to leave space for the background */
 }
 
 .work_section .work_container {
@@ -789,7 +816,7 @@ a:focus {
   color: #fbfcfd;
   margin: 0 auto;
   text-align: center;
-  border-top: 1px solid #ffffff;
+  /* border-top: 1px solid #ffffff; */
 }
 
 .footer_section a {

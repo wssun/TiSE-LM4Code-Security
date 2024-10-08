@@ -168,482 +168,263 @@
     <!-- end slider section -->
   </div>
 
-  <section class="who_section">
+  <div style="background-color: #f0f0f0; background-image: url(images/grey-background.png);">
+    <div class="table-container">
+      <section class="who_section">
+        
+        <div class="container">
     
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12">
-            <!-- 内容展示区域 -->
-            <div id="contentArea" class="content-item">
-                <!-- 动态加载内容 -->
-            </div>
-        </div>
-      </div>
-
-
-        <!-- <div class="row">
-          <div class="col-md-5">
-            <div class="img-box">
-              <img src="images/class1_papers/paper1.png" alt="">
+          <div class="row">
+            <div class="col-md-12">
+                <!-- 内容展示区域 -->
+                <div id="contentArea" class="content-item">
+                    <!-- 动态加载内容 -->
+                </div>
             </div>
           </div>
-          <div class="col-md-7">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>
-                  Data-efficient Fine-tuning for LLM-based Recommendation
-                </h2>
-              </div>
-              <p>
-                <h3> Authors:  </h3>
-                Xinyin Ma, Gongfan Fang, Xinchao Wang
-              </p>
-
-              <p>
-                Large language models (LLMs) have shown remarkable capabilities in language 
-                understanding and generation. However, such impressive capability typically 
-                comes with a substantial model size, which presents significant challenges 
-                in both the deployment, inference, and training stages. With LLM being a 
-                general-purpose task solver, we explore its compression in a task-agnostic 
-                manner, which aims to preserve the multi-task solving and language generation 
-                ability of the original LLM. One challenge to achieving this is the enormous 
-                size of the training corpus of LLM, which makes both data transfer and model 
-                post-training over-burdensome. Thus, we tackle the compression of LLMs within 
-                the bound of two constraints: being task-agnostic and minimizing the reliance 
-                on the original training dataset. Our method, named LLM-pruner, adopts structural 
-                pruning that selectively removes non-critical coupled structures based on gradient 
-                information, maximally preserving the majority of the LLM's functionality. 
-                To this end, the performance of pruned models can be efficiently recovered through 
-                tuning techniques, LoRA, in merely 3 hours, requiring only 50K data. We validate 
-                the LLM-Pruner on three LLMs, including LLaMA, Vicuna, and ChatGLM, and demonstrate 
-                that the compressed models still exhibit satisfactory capabilities in zero-shot 
-                classification and generation. The code will be made public.
-              </p>
-              <div>
-                <a href="class1.html">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-5">
-            <div class="img-box">
-              <img src="images/who-img.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-md-7">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>
-                  Paper Classification2
-                </h2>
-              </div>
-              <p>
-                第二个论文介绍语
-              </p>
-              <div>
-                <a href="class2.html">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-5">
-            <div class="img-box">
-              <img src="images/who-img.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-md-7">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>
-                  Paper Classification3
-                </h2>
-              </div>
-              <p>
-                第三个论文介绍语
-              </p>
-              <div>
-                <a href="class3.html">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-      <div class="row">
-          <div class="col-md-12">
-              <!-- 分页组件 -->
-              <nav aria-label="Pagination example">
-                  <ul class="pagination" id="pagination">
-                    <!-- 分页链接将在这里动态生成 -->
-                  </ul>
-
-              </nav>
-          </div>
-      </div>
-
-    </div>
-
     
-
-
-  </section>
-
-  <section>
-    <div class="container mt-5">
-      <h2>Datasets used in adversarial research on CodeLMs</h2>
-      <table class="table table-bordered table-striped table-hover">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">Dataset</th>
-            <th scope="col">Year</th>
-            <th scope="col">Programming Language</th>
-            <th scope="col">Data Source</th>
-            <th scope="col">Download Link</th>
-            <th scope="col">Study</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>BigCloneBench</td>
-            <td>2014</td>
-            <td>Java</td>
-            <td>GitHub</td>
-            <td><a href="https://github.com/clonebench/BigCloneBench">Download</a></td>
-            <td>XXX</td>
-          </tr>
-          <!-- 其他行数据 -->
-          <!-- ... -->
-          <tr>
-            <td>OJ dataset</td>
-            <td>2016</td>
-            <td>C++</td>
-            <td> OJ Platform</td>
-            <td> <a href="http://programming.grids.cn">Download</a></td>
-            <td>XXX</td>
-          </tr>
-
-          <tr>
-            <td>CodeSearchNet</td>
-            <td>2019</td>
-            <td>Go <br>
-                Java <br>
-                JavaScript <br>
-                PHP <br>
-                Python <br>
-                Ruby <br>
-            </td>
-            <td> GitHub </td>
-            <td> <a href=" https://github.com/github/CodeSearchNet">Download</a></td>
-            <td>XXX</td>
-          </tr>
-          <tr>
-            <td>Code2Seq</td>
-            <td>2019</td>
-            <td>Java
-            </td>
-            <td> GitHub </td>
-            <td> <a href=" https://github.com/tech-srl/code2seq#datasets">Download</a></td>
-            <td>XXX</td>
-          </tr>          
-          <tr>
-            <td>Devign</td>
-            <td>2019</td>
-            <td>Java
-            </td>
-            <td> GitHub </td>
-            <td> <a href=" https://github.com/rjust/defects4j">Download</a></td>
-            <td>XXX</td>
-          </tr>       
-          <tr>
-            <td>Google Code Jam (GCJ)</td>
-            <td>2020</td>
-            <td>C++ <br>
-                Java
-            </td>
-            <td> OJ Platform </td>
-            <td> <a href=" https://codingcompetitions.withgoogle.com/codejam">Download</a></td>
-            <td>XXX</td>
-          </tr>       
-          <tr>
-            <td>CodeXGLUE</td>
-            <td>2021</td>
-            <td>Go <br>
-                Java <br>
-                JavaScript <br>
-                PHP <br>
-                Python <br>
-                Ruby <br>
-            </td>
-            <td> GitHub </td>
-            <td> <a href=" https://github.com/microsoft/CodeXGLUE">Download</a></td>
-            <td>XXX</td>
-          </tr>       
-          <tr>
-            <td>CodeQA</td>
-            <td>2021</td>
-            <td>Java <br>
-                Python
-            </td>
-            <td> GitHub </td>
-            <td> <a href=" https://github.com/jadecxliu/codeqa">Download</a></td>
-            <td>XXX</td>
-          </tr>       
-          <tr>
-            <td>APPS</td>
-            <td>2021</td>
-            <td>Python
-            </td>
-            <td> OJ Platform </td>
-            <td> <a href=" https://people.eecs.berkeley.edu/hendrycks/APPS.tar.gz">Download</a></td>
-            <td>XXX</td>
-          </tr>      
-          <tr>
-            <td>Shellcode_IA32</td>
-            <td>2021</td>
-            <td>assembly language instruction
-            </td>
-            <td> OJ Platform </td>
-            <td> <a href=" https://github.com/dessertlab/Shellcode_IA32">Download</a></td>
-            <td>XXX</td>
-          </tr>      
-          <tr>
-            <td>SecurityEval</td>
-            <td>2022</td>
-            <td>Python
-            </td>
-            <td> GitHub </td>
-            <td> <a href=" https://github.com/s2e-lab/SecurityEval">Download</a></td>
-            <td>XXX</td>
-          </tr>      
-          <tr>
-            <td>LLMSecEval</td>
-            <td>2023</td>
-            <td>Python<br>
-              C
-            </td>
-            <td> GitHub </td>
-            <td> <a href=" https://github.com/tuhh-softsec/LLMSecEval">Download</a></td>
-            <td>XXX</td>
-          </tr>      
-          <tr>
-            <td>PoisonPy</td>
-            <td>2023</td>
-            <td>Python
-            </td>
-            <td> GitHub </td>
-            <td> 
-              not yet published
-            </td>
-            <td>XXX</td>
-          </tr>
-
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section>
-    <div class="container mt-5">
-      <h2> A summary of target models of adversarial attacks in CodeLMs</h2>
-      <table class="table table-bordered table-striped table-hover">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">Attack Technique</th>
-            <th scope="col">Year</th>
-            <th scope="col">Venue</th>
-            <th scope="col">Attack Type</th>
-            <th scope="col">Target Models</th>
-            <th scope="col">Target Tasks</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Quiring et al.</td>
-            <td>2019</td>
-            <td>USENIX Security</td>
-            <td>Black-box Attack</td>
-            <td>Random Forest <br>
-                LSTM</td>
-            <td>Authorship Attribution</td>
-          </tr>
-          <!-- 其他行数据 -->
-          <!-- ... -->
-          <tr>
-            <td>DAMP</td>
-            <td>2020</td>
-            <td>OOPSLA</td>
-            <td>White-box Attack</td>
-            <td>Code2Ve <br>
-                GGNN</td>
-            <td>Method Name Prediction <br>
-                Variable Name Prediction</td>
-          </tr>
-
-          <tr>
-            <td>STRATA</td>
-            <td>2020</td>
-            <td>Arxiv</td>
-            <td>Black-box Attack</td>
-            <td>Code2Seq</td>
-            <td>Method Name Prediction</td>
-          </tr>
-
-          <tr>
-            <td>MHM</td>
-            <td>2020</td>
-            <td>AAAI</td>
-            <td>Black-box Attack</td>
-            <td>BiLSTM <br>
-                ASTNN
-            </td>
-            <td>Function Classification</td>
-          </tr>
-          
-          <tr>
-            <td>Srikant et al.</td>
-            <td>2021</td>
-            <td>ICLR</td>
-            <td>White-box Attack</td>
-            <td>Seq2Seq</td>
-            <td>Method Name Prediction</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- <section class="work_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Papers
-        </h2>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- end work section -->
-
-  <!-- client section -->
-  <!-- <section class="client_section">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Paper display
-        </h2>
-      </div>
-      <div class="carousel-wrap ">
-        <div class="owl-carousel">
-
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/c-1.png" alt="">
+          <div class="row">
+              <div class="col-md-12">
+                  <!-- 分页组件 -->
+                  <nav aria-label="Pagination example">
+                      <ul class="pagination" id="pagination">
+                        <!-- 分页链接将在这里动态生成 -->
+                      </ul>
+                  </nav>
               </div>
-              <div class="detail-box">
-                <h5>
-                  A survey on large language model (llm) security and privacy: The good, the bad, and the ugly <br>
-                  <span>
-                    Y Yao, J Duan, K Xu, Y Cai
-                  </span>
-                </h5>
-                <img src="images/quote.png" alt="">
-                <p>
-                  Large Language Models (LLMs), such as ChatGPT and Bard, 
-                  have revolutionized natural language understanding and generation. 
-                  They possess deep language comprehension, human-like text generation capabilities, 
-                  contextual awareness, and robust problem-solving skills, making them invaluable 
-                  in various domains (e.g., search engines, customer support, translation). 
-                  In the meantime, LLMs have also gained traction in the security community, 
-                  revealing security vulnerabilities and showcasing their potential in security-related tasks. 
-                  This paper explores the intersection of LLMs with security and privacy. 
-                  Specifically, we investigate how LLMs positively impact security and privacy, potential 
-                  risks and threats associated with their use, and inherent vulnerabilities within LLMs. 
-                  Through a comprehensive literature review, the paper categorizes the papers 
-                  into “The Good” (beneficial LLM applications), “The Bad” (offensive applications), 
-                  and “The Ugly” (vulnerabilities of LLMs and their defenses). 
-                  We have some interesting findings. For example, LLMs have proven to enhance code security 
-                  (code vulnerability detection) and data privacy (data confidentiality protection), 
-                  outperforming traditional methods. However, they can also be harnessed for various 
-                  attacks (particularly user-level attacks) due to their human-like reasoning abilities. 
-                  We have identified areas that require further research efforts. For example, Research on 
-                  model and parameter extraction attacks is limited and often theoretical, hindered by LLM 
-                  parameter scale and confidentiality. Safe instruction tuning, a recent development, 
-                  requires more exploration. We hope that our work can shed light on the LLMs’ potential 
-                  to both bolster and jeopardize cybersecurity.
-                </p>
-              </div>
-            </div>
           </div>
-
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/c-2.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Tempor incididunt <br>
-                  <span>
-                    Dipiscing elit
-                  </span>
-                </h5>
-                <img src="images/quote.png" alt="">
-                <p>
-                  Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/c-3.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Tempor incididunt <br>
-                  <span>
-                    Dipiscing elit
-                  </span>
-                </h5>
-                <img src="images/quote.png" alt="">
-                <p>
-                  Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                </p>
-              </div>
-            </div>
-          </div>
-
-
         </div>
-      </div>
+      </section>
     </div>
-  </section> -->
 
-  <!-- end client section -->
+    <div class="table-container">
+      <section class="table">
+        <div class="container mt-5">
+          <h2>Datasets used in adversarial research on CodeLMs</h2>
+          <table class="table table-bordered table-striped table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Dataset</th>
+                <th scope="col">Year</th>
+                <th scope="col">Programming Language</th>
+                <th scope="col">Data Source</th>
+                <th scope="col">Download Link</th>
+                <th scope="col">Study</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>BigCloneBench</td>
+                <td>2014</td>
+                <td>Java</td>
+                <td>GitHub</td>
+                <td><a href="https://github.com/clonebench/BigCloneBench">Download</a></td>
+                <td>XXX</td>
+              </tr>
+              <!-- 其他行数据 -->
+              <!-- ... -->
+              <tr>
+                <td>OJ dataset</td>
+                <td>2016</td>
+                <td>C++</td>
+                <td> OJ Platform</td>
+                <td> <a href="http://programming.grids.cn">Download</a></td>
+                <td>XXX</td>
+              </tr>
 
-  <!-- target section -->
+              <tr>
+                <td>CodeSearchNet</td>
+                <td>2019</td>
+                <td>Go <br>
+                    Java <br>
+                    JavaScript <br>
+                    PHP <br>
+                    Python <br>
+                    Ruby <br>
+                </td>
+                <td> GitHub </td>
+                <td> <a href=" https://github.com/github/CodeSearchNet">Download</a></td>
+                <td>XXX</td>
+              </tr>
+              <tr>
+                <td>Code2Seq</td>
+                <td>2019</td>
+                <td>Java
+                </td>
+                <td> GitHub </td>
+                <td> <a href=" https://github.com/tech-srl/code2seq#datasets">Download</a></td>
+                <td>XXX</td>
+              </tr>          
+              <tr>
+                <td>Devign</td>
+                <td>2019</td>
+                <td>Java
+                </td>
+                <td> GitHub </td>
+                <td> <a href=" https://github.com/rjust/defects4j">Download</a></td>
+                <td>XXX</td>
+              </tr>       
+              <tr>
+                <td>Google Code Jam (GCJ)</td>
+                <td>2020</td>
+                <td>C++ <br>
+                    Java
+                </td>
+                <td> OJ Platform </td>
+                <td> <a href=" https://codingcompetitions.withgoogle.com/codejam">Download</a></td>
+                <td>XXX</td>
+              </tr>       
+              <tr>
+                <td>CodeXGLUE</td>
+                <td>2021</td>
+                <td>Go <br>
+                    Java <br>
+                    JavaScript <br>
+                    PHP <br>
+                    Python <br>
+                    Ruby <br>
+                </td>
+                <td> GitHub </td>
+                <td> <a href=" https://github.com/microsoft/CodeXGLUE">Download</a></td>
+                <td>XXX</td>
+              </tr>       
+              <tr>
+                <td>CodeQA</td>
+                <td>2021</td>
+                <td>Java <br>
+                    Python
+                </td>
+                <td> GitHub </td>
+                <td> <a href=" https://github.com/jadecxliu/codeqa">Download</a></td>
+                <td>XXX</td>
+              </tr>       
+              <tr>
+                <td>APPS</td>
+                <td>2021</td>
+                <td>Python
+                </td>
+                <td> OJ Platform </td>
+                <td> <a href=" https://people.eecs.berkeley.edu/hendrycks/APPS.tar.gz">Download</a></td>
+                <td>XXX</td>
+              </tr>      
+              <tr>
+                <td>Shellcode_IA32</td>
+                <td>2021</td>
+                <td>assembly language instruction
+                </td>
+                <td> OJ Platform </td>
+                <td> <a href=" https://github.com/dessertlab/Shellcode_IA32">Download</a></td>
+                <td>XXX</td>
+              </tr>      
+              <tr>
+                <td>SecurityEval</td>
+                <td>2022</td>
+                <td>Python
+                </td>
+                <td> GitHub </td>
+                <td> <a href=" https://github.com/s2e-lab/SecurityEval">Download</a></td>
+                <td>XXX</td>
+              </tr>      
+              <tr>
+                <td>LLMSecEval</td>
+                <td>2023</td>
+                <td>Python<br>
+                  C
+                </td>
+                <td> GitHub </td>
+                <td> <a href=" https://github.com/tuhh-softsec/LLMSecEval">Download</a></td>
+                <td>XXX</td>
+              </tr>      
+              <tr>
+                <td>PoisonPy</td>
+                <td>2023</td>
+                <td>Python
+                </td>
+                <td> GitHub </td>
+                <td> 
+                  not yet published
+                </td>
+                <td>XXX</td>
+              </tr>
 
-  <!-- end target section -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
 
+    <div class="table-container">
+      <section class="table">
+        <div class="container mt-5">
+          <h2> A summary of target models of adversarial attacks in CodeLMs</h2>
+          <table class="table table-bordered table-striped table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Attack Technique</th>
+                <th scope="col">Year</th>
+                <th scope="col">Venue</th>
+                <th scope="col">Attack Type</th>
+                <th scope="col">Target Models</th>
+                <th scope="col">Target Tasks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Quiring et al.</td>
+                <td>2019</td>
+                <td>USENIX Security</td>
+                <td>Black-box Attack</td>
+                <td>Random Forest <br>
+                    LSTM</td>
+                <td>Authorship Attribution</td>
+              </tr>
+              <!-- 其他行数据 -->
+              <!-- ... -->
+              <tr>
+                <td>DAMP</td>
+                <td>2020</td>
+                <td>OOPSLA</td>
+                <td>White-box Attack</td>
+                <td>Code2Ve <br>
+                    GGNN</td>
+                <td>Method Name Prediction <br>
+                    Variable Name Prediction</td>
+              </tr>
 
-  <!-- contact section -->
+              <tr>
+                <td>STRATA</td>
+                <td>2020</td>
+                <td>Arxiv</td>
+                <td>Black-box Attack</td>
+                <td>Code2Seq</td>
+                <td>Method Name Prediction</td>
+              </tr>
 
-
-  <!-- end contact section -->
-  
+              <tr>
+                <td>MHM</td>
+                <td>2020</td>
+                <td>AAAI</td>
+                <td>Black-box Attack</td>
+                <td>BiLSTM <br>
+                    ASTNN
+                </td>
+                <td>Function Classification</td>
+              </tr>
+              
+              <tr>
+                <td>Srikant et al.</td>
+                <td>2021</td>
+                <td>ICLR</td>
+                <td>White-box Attack</td>
+                <td>Seq2Seq</td>
+                <td>Method Name Prediction</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
   <!-- footer section -->
   <section class="container-fluid footer_section">
     <p>
