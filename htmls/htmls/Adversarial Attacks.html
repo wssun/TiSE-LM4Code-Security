@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Adversarial Attacks</title>
+
+  <!-- slider stylesheet -->
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Backdoor Attacks.html"> Backdoor Attacks </a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="do.html"> What we do </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"> Portfolio </a>
+                </li> -->
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+                </li> -->
+              </ul>
+              <div class="user_option">
+                <a href="member.html" style="color: #fff;">
+                  <img src="images/user.png" alt="" style="height: 25px;">Group Members
+                </a>
+                <!-- <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form> -->
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- <div class="adv_pic" style="background-image: url('images/hero-bg.jpg');  height: 10%; z-index: -1;"></div> -->
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators"> 
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol> 
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col">
+                  <div class="detail-box">
+                    <div>
+                      <h1>
+                        Adversarial Attacks
+                      </h1>
+                      <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Adversarial attacks primarily occur during the model testing phase. The
+                        attacker intentionally introduces small but malicious perturbations to input samples, which can
+                        highly likely lead to misclassification by the classifier. The core of adversarial attacks lies in 
+                        crafting adversarial examples that can induce neural models to make incorrect classifications. Once
+                        constructed, adversarial examples are inputted into the target model just like normal samples, aiming
+                        to deceive the model's decision-making process and thus tricking the target model.
+                      </p>
+
+                      <div class="img-box">
+                        <img src="images/adv-workflow.png">
+                      </div>
+                      <!-- <div class="">
+                        <a href="">
+                          Contact us
+                        </a>
+                      </div> -->
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <div class="detail-box">
+                    <div>
+                      <h2>
+                        WhiteBox Attacks
+                      </h2>
+                    <div class="img-box">
+                        <img src="images/adv-whitebox.png">
+                    </div>
+                      <p>
+                        In white-box adversarial attacks, attackers have complete knowledge of the target model, including model structure, weight parameters, and training data. In this scenario, attackers can directly access the internal information of the target model, making it easier to understand the model’s characteristics and vulnerabilities. Attackers can generate adversarial examples in a targeted manner by analyzing model gradients, loss functions, and other information, causing the model to produce misleading outputs. White-box attacks typically involve using gradient information for backpropagation to maximize changes in input, steering the model output toward the direction expected by the attacker. With carefully designed adversarial examples, attackers can guide the model to make incorrect decisions, posing significant harm in practical applications.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <div class="detail-box">
+                    <div>
+                      <h2>
+                        BlackBox Attacks
+                      </h2>
+                      <div class="img-box">
+                          <img src="images/adv-blackbox.png">
+                      </div>
+                      <p>
+                        In recent years, black-box adversarial attacks in the field of neural code models have been widely studied. In contrast to white-box adversarial attacks, where the attacker has detailed information about the model’s structure and weights, black-box adversarial attacks involve attackers who cannot access such detailed information. In black-box attacks, adversaries can only generate adversarial examples by obtaining limited model outputs through model queries. The harm caused by black-box attacks primarily manifests in compromised model performance and threats to system security. In situations where detailed model information is unavailable, attackers ingeniously construct adversarial examples, potentially leading to misleading outputs from neural code models, affecting the accuracy of the model in practical tasks. This not only poses a potential threat to downstream models in software engineering tasks but may also result in serious issues in security-critical systems.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- <div style="background-color: aqua; height: 20px; width: 40px;"></div> -->
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <div style="background-color: #f0f0f0; background-image: url(images/grey-background.png);">
+    <div class="table-container">
+      <section class="who_section">
+        
+        <div class="container">
+    
+          <div class="row">
+            <div class="col-md-12">
+                <!-- 内容展示区域 -->
+                <div id="contentArea" class="content-item">
+                    <!-- 动态加载内容 -->
+                </div>
+            </div>
+          </div>
+    
+          <div class="row">
+              <div class="col-md-12">
+                  <!-- 分页组件 -->
+                  <nav aria-label="Pagination example">
+                      <ul class="pagination" id="pagination">
+                        <!-- 分页链接将在这里动态生成 -->
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="table-container">
+      <section class="table">
+        <div class="container mt-5">
+          <h2>Datasets used in adversarial research on CodeLMs</h2>
+          <table class="table table-bordered table-striped table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Dataset</th>
+                <th scope="col">Year</th>
+                <th scope="col">Programming Language</th>
+                <th scope="col">Data Source</th>
+                <th scope="col">Download Link</th>
+                <th scope="col">Study</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>BigCloneBench</td>
+                <td>2014</td>
+                <td>Java</td>
+                <td>GitHub</td>
+                <td><a href="https://github.com/clonebench/BigCloneBench">Download</a></td>
+                <td>XXX</td>
+              </tr>
+              <!-- 其他行数据 -->
+              <!-- ... -->
+              <tr>
+                <td>OJ dataset</td>
+                <td>2016</td>
+                <td>C++</td>
+                <td> OJ Platform</td>
+                <td> <a href="http://programming.grids.cn">Download</a></td>
+                <td>XXX</td>
+              </tr>
+
+              <tr>
+                <td>CodeSearchNet</td>
+                <td>2019</td>
+                <td>Go <br>
+                    Java <br>
+                    JavaScript <br>
+                    PHP <br>
+                    Python <br>
+                    Ruby <br>
+                </td>
+                <td> GitHub </td>
+                <td> <a href=" https://github.com/github/CodeSearchNet">Download</a></td>
+                <td>XXX</td>
+              </tr>
+              <tr>
+                <td>Code2Seq</td>
+                <td>2019</td>
+                <td>Java
+                </td>
+                <td> GitHub </td>
+                <td> <a href=" https://github.com/tech-srl/code2seq#datasets">Download</a></td>
+                <td>XXX</td>
+              </tr>          
+              <tr>
+                <td>Devign</td>
+                <td>2019</td>
+                <td>Java
+                </td>
+                <td> GitHub </td>
+                <td> <a href=" https://github.com/rjust/defects4j">Download</a></td>
+                <td>XXX</td>
+              </tr>       
+              <tr>
+                <td>Google Code Jam (GCJ)</td>
+                <td>2020</td>
+                <td>C++ <br>
+                    Java
+                </td>
+                <td> OJ Platform </td>
+                <td> <a href=" https://codingcompetitions.withgoogle.com/codejam">Download</a></td>
+                <td>XXX</td>
+              </tr>       
+              <tr>
+                <td>CodeXGLUE</td>
+                <td>2021</td>
+                <td>Go <br>
+                    Java <br>
+                    JavaScript <br>
+                    PHP <br>
+                    Python <br>
+                    Ruby <br>
+                </td>
+                <td> GitHub </td>
+                <td> <a href=" https://github.com/microsoft/CodeXGLUE">Download</a></td>
+                <td>XXX</td>
+              </tr>       
+              <tr>
+                <td>CodeQA</td>
+                <td>2021</td>
+                <td>Java <br>
+                    Python
+                </td>
+                <td> GitHub </td>
+                <td> <a href=" https://github.com/jadecxliu/codeqa">Download</a></td>
+                <td>XXX</td>
+              </tr>       
+              <tr>
+                <td>APPS</td>
+                <td>2021</td>
+                <td>Python
+                </td>
+                <td> OJ Platform </td>
+                <td> <a href=" https://people.eecs.berkeley.edu/hendrycks/APPS.tar.gz">Download</a></td>
+                <td>XXX</td>
+              </tr>      
+              <tr>
+                <td>Shellcode_IA32</td>
+                <td>2021</td>
+                <td>assembly language instruction
+                </td>
+                <td> OJ Platform </td>
+                <td> <a href=" https://github.com/dessertlab/Shellcode_IA32">Download</a></td>
+                <td>XXX</td>
+              </tr>      
+              <tr>
+                <td>SecurityEval</td>
+                <td>2022</td>
+                <td>Python
+                </td>
+                <td> GitHub </td>
+                <td> <a href=" https://github.com/s2e-lab/SecurityEval">Download</a></td>
+                <td>XXX</td>
+              </tr>      
+              <tr>
+                <td>LLMSecEval</td>
+                <td>2023</td>
+                <td>Python<br>
+                  C
+                </td>
+                <td> GitHub </td>
+                <td> <a href=" https://github.com/tuhh-softsec/LLMSecEval">Download</a></td>
+                <td>XXX</td>
+              </tr>      
+              <tr>
+                <td>PoisonPy</td>
+                <td>2023</td>
+                <td>Python
+                </td>
+                <td> GitHub </td>
+                <td> 
+                  not yet published
+                </td>
+                <td>XXX</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div class="table-container">
+      <section class="table">
+        <div class="container mt-5">
+          <h2> A summary of target model of adversarial attacks in CodeLMs</h2>
+          <table class="table table-bordered table-striped table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Attack Technique</th>
+                <th scope="col">Year</th>
+                <th scope="col">Venue</th>
+                <th scope="col">Attack Type</th>
+                <th scope="col">Target Model</th>
+                <th scope="col">Target Tasks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Quiring et al.</td>
+                <td>2019</td>
+                <td>USENIX Security</td>
+                <td>Black-box Attack</td>
+                <td>Random Forest <br>
+                    LSTM</td>
+                <td>Authorship Attribution</td>
+              </tr>
+              <!-- 其他行数据 -->
+              <!-- ... -->
+              <tr>
+                <td>DAMP</td>
+                <td>2020</td>
+                <td>OOPSLA</td>
+                <td>White-box Attack</td>
+                <td>Code2Ve <br>
+                    GGNN</td>
+                <td>Method Name Prediction <br>
+                    Variable Name Prediction</td>
+              </tr>
+
+              <tr>
+                <td>STRATA</td>
+                <td>2020</td>
+                <td>Arxiv</td>
+                <td>Black-box Attack</td>
+                <td>Code2Seq</td>
+                <td>Method Name Prediction</td>
+              </tr>
+
+              <tr>
+                <td>MHM</td>
+                <td>2020</td>
+                <td>AAAI</td>
+                <td>Black-box Attack</td>
+                <td>BiLSTM <br>
+                    ASTNN
+                </td>
+                <td>Function Classification</td>
+              </tr>
+              
+              <tr>
+                <td>Srikant et al.</td>
+                <td>2021</td>
+                <td>ICLR</td>
+                <td>White-box Attack</td>
+                <td>Seq2Seq</td>
+                <td>Method Name Prediction</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2024 All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </section>
+  <!-- footer section -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- owl carousel script 
+    -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      navText: [],
+      center: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+
+  </script>
+
+
+
+  <script>
+
+    const jsonData = {
+      "papers": [
+                {
+                  "id": 1,
+                  "title": "SHIELD: Thwarting Code Authorship Attribution",
+                  "authors": "Authors: Mohammed Abuhamad, David Mohaisen,  Changhun Jung, DaeHun Nyang",
+                  "imgSrc": "images/class1_papers/SHIELD.png",
+                  "description": "In this paper, we introduce SHIELD to\
+                                  examine the robustness of different code authorship attribution\
+                                  approaches against adversarial code examples. We define four\
+                                  attacks on attribution techniques, which include targeted and\
+                                  non-targeted attacks, and realize them using adversarial code\
+                                  perturbation. We experiment with a dataset of 200 programmers\
+                                  from the Google Code Jam competition to validate our methods\
+                                  targeting six state-of-the-art authorship attribution methods that\
+                                  adopt a variety of techniques for extracting authorship traits from\
+                                  source-code, including RNN, CNN, and code stylometry.",
+                  "link": "https://arxiv.org/pdf/2304.13255"
+                },
+                {
+                  "id": 2,
+                  "title": "DIP: Dead code Insertion based Black-box Attack for Programming Language Model",
+                  "authors": "Authors : CheolWon Na, YunSeok Choi, Jee-Hyong Lee",
+                  "imgSrc": "images/class1_papers/DIP.png",
+                  "description": "In this paper, we\
+                                  propose DIP (Dead code Insertion based Black-box Attack for Programming Language Model),\
+                                  a high-performance and efficient black-box attack method to generate adversarial examples\
+                                  using dead code insertion.",
+                  "link": "https://aclanthology.org/2023.acl-long.430.pdf"
+                },
+                {
+                  "id": 3,
+                  "title": "Adversarial Attacks on Code Models with Discriminative Graph Patterns",
+                  "authors": "Authors: Thanh-Dat Nguyen, Yang Zhou, Xuan-Bach D. Le, Patanamon (Pick) Thongtanunam, David Lo",
+                  "imgSrc": "images/class1_papers/GraphCodeAttack.png",
+                  "description": "we propose a novel\
+                                  adversarial attack framework, GraphCodeAttack, to better evaluate the robustness of code models. Given a target code model,\
+                                  GraphCodeAttack automatically mines important code patterns,\
+                                  which can influence the model’s decisions, to perturb the structure\
+                                  of input code to the model. To do so, GraphCodeAttack uses\
+                                  a set of input source codes to probe the model’s outputs. From\
+                                  these source codes and outputs, GraphCodeAttack identifies the\
+                                  discriminative ASTs patterns that can influence the model decisions. GraphCodeAttack then selects appropriate AST patterns,\
+                                  concretizes the selected patterns as attacks, and inserts them as\
+                                  dead code into the model’s input program. To effectively synthesize\
+                                  attacks from AST patterns, GraphCodeAttack uses a separate\
+                                  pre-trained code model to fill in the ASTs with concrete code snippets. We evaluate the robustness of two popular code models (e.g.,\
+                                  CodeBERT and GraphCodeBERT) against our proposed approach\
+                                  on three tasks: Authorship Attribution, Vulnerability Prediction,\
+                                  and Clone Detection",
+                  "link": "https://arxiv.org/pdf/2308.11161"
+                },
+                {
+                  "id": 4,
+                  "title": "Misleading Authorship Attribution of Source Code using Adversarial Learning",
+                  "authors": "Authors: Erwin Quiring, Alwin Maier, Konrad Rieck",
+                  "imgSrc": "images/class1_papers/GraphCodeAttack.png",
+                  "description": "In this paper, we present a novel attack against authorship \
+                                  attribution of source code. We exploit that recent attribution \
+                                  methods rest on machine learning and thus can be deceived \
+                                  by adversarial examples of source code. Our attack performs \
+                                  a series of semantics-preserving code transformations that \
+                                  mislead learning-based attribution but appear plausible to a developer. \
+                                  The attack is guided by Monte-Carlo tree search that \
+                                  enables us to operate in the discrete domain of source code. \
+                                  In an empirical evaluation with source code from 204 programmers, we demonstrate that our attack has a substantial \
+                                  effect on two recent attribution methods, whose accuracy \
+                                  drops from over 88% to 1% under attack. Furthermore, we \
+                                  show that our attack can imitate the coding style of developers \
+                                  with high accuracy and thereby induce false attributions. We \
+                                  conclude that current approaches for authorship attribution \
+                                  are inappropriate for practical application and there is a need \
+                                  for resilient analysis techniques.",
+                  "link": "https://www.usenix.org/system/files/sec19-quiring.pdf"
+                },
+                {
+                  "id": 5,
+                  "title": "Adversarial Examples for Models of Code",
+                  "authors": "Authors: Erwin Quiring, Alwin Maier, Konrad Rieck",
+                  "imgSrc": "images/class1_papers/GraphCodeAttack.png",
+                  "description": "Neural models of code have shown impressive results when performing tasks such as predicting method names and identifying certain kinds of bugs. \
+                  We show that these models are vulnerable to adversarial examples, \
+                  and introduce a novel approach for attacking trained models of code using adversarial examples. \
+                  The main idea of our approach is to force a given trained model to make an incorrect prediction, \
+                  as specified by the adversary, by introducing small perturbations that do not change the program's semantics, \
+                  thereby creating an adversarial example. To find such perturbations, \
+                  we present a new technique for Discrete Adversarial Manipulation of Programs (DAMP). \
+                  DAMP works by deriving the desired prediction with respect to the model's inputs, \
+                  while holding the model weights constant, and following the gradients to slightly modify the input code. \
+                  We show that our DAMP attack is effective across three neural architectures: code2vec, GGNN, and GNN-FiLM, \
+                  in both Java and C#. Our evaluations demonstrate that DAMP has up to 89% success rate in changing a prediction to the adversary's choice (a targeted attack) and a success rate of up to 94% in changing a given prediction to any incorrect prediction (a non-targeted attack). To defend a model against such attacks, we empirically examine a variety of possible defenses and discuss their trade-offs. We show that some of these defenses can dramatically drop the success rate of the attacker, with a minor penalty of 2% relative degradation in accuracy when they are not performing under attack.",
+                  "link": "https://arxiv.org/pdf/1910.07517"
+                },
+                {
+                  "id": 6,
+                  "title": "CodeAttack: Code-Based Adversarial Attacks for Pre-trained Programming Language Models",
+                  "authors": "Authors: Akshita Jha, Chandan K. Reddy",
+                  "imgSrc": "images/class1_papers/codeattack.png",
+                  "description": "Pre-trained programming language (PL) models (such as CodeT5, CodeBERT, GraphCodeBERT, etc.,) have the potential to automate software engineering tasks involving code understanding and code generation. However, these models operate in the natural channel of code, i.e., they are primarily concerned with the human understanding of the code. They are not robust to changes in the input and thus, are potentially susceptible to adversarial attacks in the natural channel. We propose, CodeAttack, a simple yet effective black-box attack model that uses code structure to generate effective, efficient, and imperceptible adversarial code samples and demonstrates the vulnerabilities of the state-of-the-art PL models to code-specific adversarial attacks. We evaluate the transferability of CodeAttack on several code-code (translation and repair) and code-NL (summarization) tasks across different programming languages. CodeAttack outperforms state-of-the-art adversarial NLP attack models to achieve the best overall drop in performance while being more efficient, imperceptible, consistent, and fluent. The code can be found at this https URL.",
+                  "link": "https://arxiv.org/pdf/2206.00052"
+                },
+                {
+                  "id": 7,
+                  "title": "Adversarial Robustness of Deep Code Comment Generation",
+                  "authors": "Authors: Yu Zhou, Xiaoqing Zhang, Juanjuan Shen, Tingting Han, Taolue Chen, Harald Gall",
+                  "imgSrc": "images/class1_papers/accent.png",
+                  "description": "Deep neural networks (DNNs) have shown remarkable performance in a variety of domains such as computer vision, speech recognition, or natural language processing. Recently they also have been applied to various software engineering tasks, typically involving processing source code. DNNs are well-known to be vulnerable to adversarial examples, i.e., fabricated inputs that could lead to various misbehaviors of the DNN model while being perceived as benign by humans. In this paper, we focus on the code comment generation task in software engineering and study the robustness issue of the DNNs when they are applied to this task. We propose ACCENT, an identifier substitution approach to craft adversarial code snippets, which are syntactically correct and semantically close to the original code snippet, but may mislead the DNNs to produce completely irrelevant code comments. In order to improve the robustness, ACCENT also incorporates a novel training method, which can be applied to existing code comment generation models. We conduct comprehensive experiments to evaluate our approach by attacking the mainstream encoder-decoder architectures on two large-scale publicly available datasets. The results show that ACCENT efficiently produces stable attacks with functionality-preserving adversarial examples, and the generated examples have better transferability compared with baselines. We also confirm, via experiments, the effectiveness in improving model robustness with our training method.",
+                  "link": "https://arxiv.org/pdf/2108.00213"
+                },
+                {
+                  "id": 8,
+                  "title": "AdVulCode: Generating Adversarial Vulnerable Code against Deep Learning-Based Vulnerability Detectors",
+                  "authors": "Authors: Xueqi Yu, Zhen Li, Xiang Huang, Shasha Zhao",
+                  "imgSrc": "images/class1_papers/advulcode.png",
+                  "description": "Deep learning-based vulnerability detection models have received widespread attention; \
+                                  however, these models are susceptible to adversarial attack, and adversarial examples are a primary \
+                                  research direction to improve the robustness of the models. There are three main categories of \
+                                  adversarial example generation methods for source code tasks: changing identifier names, adding \
+                                  dead code, and changing code structure. However, these methods cannot be directly applied to \
+                                  vulnerability detection. Therefore, we propose the first study of adversarial attack on vulnerability \
+                                  detection models. Specifically, we utilize equivalent transformations to generate candidate statements \
+                                  and introduce an improved Monte Carlo tree search algorithm to guide the selection of candidate \
+                                  statements to generate adversarial examples. In addition, we devise a black-box approach that \
+                                  can be applied to widespread vulnerability detection models. The experimental results show that \
+                                  our approach achieves attack success rates of 16.48%, 27.92%, and 65.20%, respectively, in three \
+                                  vulnerability detection models with different levels of granularity. Compared with the state-of-the-art \
+                                  source code attack method ALERT, our method can handle models with identifier name mapping, \
+                                  and our attack success rate is 27.59% higher on average than ALERT.", 
+                  "link": "https://www.mdpi.com/2079-9292/12/4/936"
+                }
+          ],
+      "totalPages": 5
+    }
+
+    const itemsPerPage = 2;
+    let currentPage = 1;
+
+    const contentArea = document.getElementById('contentArea');
+    const pagination = document.getElementById('pagination');
+
+    // function fetchPapers(page) {
+    //   const startIndex = (page - 1) * itemsPerPage;
+
+      
+    //   loadContent(jsondata.papers);
+    //   updatePagination(jsondata.totalPages);
+
+      
+
+    //   // const url = `https://api.example.com/papers?page=${page}&limit=${itemsPerPage}`;
+
+    //   // fetch('https://run.mocky.io/v3/d9a5ab25-cc82-46c4-be1f-afba0cfcf9c0')
+    //   //   .then(response => response.json())
+    //   //   .then(data => {
+    //   //     loadContent(data.papers);
+    //   //     updatePagination(5);
+    //   //   })
+    //   //   .catch(error => console.error('Error fetching papers:', error));
+    // }
+
+    // 获取特定页码的数据
+
+
+    function fetchPapers(pageNumber) {
+      currentPage = pageNumber; // 更新当前页码
+      const page_data = paginate(jsonData.papers, itemsPerPage, pageNumber);
+      loadContent(page_data); // 加载内容
+      updatePagination(); // 更新分页
+    }   
+    
+    // 分页函数
+    function paginate(papers, page_size, page_number) {
+      let start = page_size * (page_number - 1);
+      let end = start + page_size;
+      return papers.slice(start, end);
+    }
+    
+    function loadContent(papers) {
+      contentArea.innerHTML = ''; // 清空当前内容
+      papers.forEach(paper => {
+        const row = document.createElement('div');
+        row.className = 'row';
+        row.innerHTML = `
+          <div class="col-md-5">
+            <div class="img-box">
+              <img src="${paper.imgSrc}" alt="${paper.title}">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>${paper.title}</h2>
+              </div>
+              <p>${paper.authors}</p>
+              <p class="content">${paper.description}</p>
+              <div>
+                <a href="${paper.link}">Read More</a>
+              </div>
+            </div>
+          </div>
+        `;
+        contentArea.appendChild(row);
+      });
+    }
+
+    function updatePagination() {
+      pagination.innerHTML = ''; // 清空当前分页链接
+
+      // 创建“上一页”按钮
+      if (currentPage > 1) {
+        const prevButton = document.createElement('li');
+        prevButton.className = 'page-item';
+        const prevLink = document.createElement('a');
+        prevLink.className = 'page-link';
+        prevLink.textContent = 'Prev';
+        prevLink.addEventListener('click', function(event) {
+          event.preventDefault(); // 阻止默认行为
+          fetchPapers(currentPage - 1); // 加载新页面的内容
+        });
+        prevButton.appendChild(prevLink);
+        pagination.appendChild(prevButton);
+      }
+      
+      const totalPages = Math.ceil(jsonData.papers.length / itemsPerPage);
+      for (let i = 1; i <= totalPages; i++) {
+        const pageItem = document.createElement('li');
+        pageItem.className = 'page-item' + (i === currentPage ? ' active' : '');
+        const pageLink = document.createElement('a');
+        pageLink.className = 'page-link';
+        pageLink.setAttribute('href', '#');
+        pageLink.textContent = i;
+
+        // 添加点击事件监听器
+        pageLink.addEventListener('click', function(event) {
+          event.preventDefault(); // 阻止默认行为
+          fetchPapers(i); // 加载新页面的内容
+        });
+
+        pageLink.onclick = function() { fetchPapers(i); };
+        pageItem.appendChild(pageLink);
+        pagination.appendChild(pageItem);
+        // console.log(pagination.innerHTML);
+      }
+
+        // 创建“下一页”按钮
+      if (currentPage < totalPages) {
+        const nextButton = document.createElement('li');
+        nextButton.className = 'page-item';
+        const nextLink = document.createElement('a');
+        nextLink.className = 'page-link';
+        nextLink.textContent = 'Next';
+        nextLink.addEventListener('click', function(event) {
+          event.preventDefault(); // 阻止默认行为
+          fetchPapers(currentPage + 1); // 加载新页面的内容
+        });
+
+        nextButton.appendChild(nextLink);
+        pagination.appendChild(nextButton);
+      }
+
+    }
+    // 初始化分页
+    updatePagination();
+
+    // 初始化加载第一页内容
+    fetchPapers(1);
+  </script>
+
+  <!-- end owl carousel script -->
+
+</body>
+
+</html>
