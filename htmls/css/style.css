@@ -806,6 +806,9 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 80px;
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
