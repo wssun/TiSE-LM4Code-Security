@@ -238,85 +238,138 @@
           <div class="item">
             <div class="box">
               <div class="img-box">
-                <a href="https://arxiv.org/pdf/2304.13255"><img src="htmls/images/recent_papers/shield.png" alt=""></a>
+                <a href="https://arxiv.org/abs/2305.17506"><img src="htmls/images/recent_papers/BadCode.png" alt=""></a>
               </div>
               <div class="detail-box">
                 <h5>
-                  SHIELD: Thwarting Code Authorship Attribution
+                  Backdooring Neural Code Search
                 </h5>
                 <!-- <img src="htmls/images/quote.png" alt=""> -->
                 <p>
-                  Authorship attribution has become increasingly accurate, posing a serious privacy risk for programmers who wish
-                  to remain anonymous. In this paper, we introduce SHIELD to
-                  examine the robustness of different code authorship attribution
-                  approaches against adversarial code examples. We define four
-                  attacks on attribution techniques, which include targeted and
-                  non-targeted attacks, and realize them using adversarial code
-                  perturbation. We experiment with a dataset of 200 programmers
-                  from the Google Code Jam competition to validate our methods
-                  targeting six state-of-the-art authorship attribution methods that
-                  adopt a variety of techniques for extracting authorship traits from
-                  source-code, including RNN, CNN, and code stylometry. Our
-                  experiments demonstrate the vulnerability of current authorship
-                  attribution methods against adversarial attacks. For the nontargeted attack, our experiments demonstrate the vulnerability
-                  of current authorship attribution methods against the attack
-                  with an attack success rate exceeds 98.5% accompanied by a
-                  degradation of the identification confidence that exceeds 13%.
-                  For the targeted attacks, we show the possibility of impersonating
-                  a programmer using targeted-adversarial perturbations with a
-                  success rate ranging from 66% to 88% for different authorship
-                  attribution techniques under several adversarial scenarios.
+                  Reusing off-the-shelf code snippets from online repositories is a common practice, 
+                  which significantly enhances the productivity of software developers. 
+                  To find desired code snippets, developers resort to code search engines through 
+                  natural language queries. Neural code search models are hence behind many such engines. 
+                  These models are based on deep learning and gain substantial attention due to their impressive 
+                  performance. However, the security aspect of these models is rarely studied. 
+                  Particularly, an adversary can inject a backdoor in neural code search models, 
+                  which return buggy or even vulnerable code with security/privacy issues.
+                   This may impact the downstream software (e.g., stock trading systems and autonomous driving) 
+                   and cause financial loss and/or life-threatening incidents. In this paper, 
+                   we demonstrate such attacks are feasible and can be quite stealthy. 
+                   By simply modifying one variable/function name, the attacker can make 
+                   buggy/vulnerable code rank in the top 11%. Our attack BADCODE features a 
+                   special trigger generation and injection procedure, making the attack more 
+                   effective and stealthy. The evaluation is conducted on two neural code search 
+                   models and the results show our attack outperforms baselines by 60%. Our user 
+                   study demonstrates that our attack is more stealthy than the baseline by two times based on the F1 score.
                 </p>
               </div>
             </div>
           </div>
+
           <div class="item">
             <div class="box">
               <div class="img-box">
-                <a href="https://arxiv.org/pdf/2301.02496"><img src="htmls/images/recent_papers/yangzhou.png" alt=""></a>
+                <a href="https://arxiv.org/abs/2410.02841"><img src="htmls/images/recent_papers/DICE.png" alt=""></a>
               </div>
               <div class="detail-box">
                 <h5>
-                  Stealthy Backdoor Attack for Code Models.
+                  Demonstration Attack against In-Context Learning for Code Intelligence
                 </h5>
                 <!-- <img src="htmls/images/quote.png" alt=""> -->
                 <p>
-                  Code models, such as CodeBERT and CodeT5, offer general-purpose representations of code and play a vital role in
-                  supporting downstream automated software engineering tasks. Most recently, code models were revealed to be vulnerable to backdoor
-                  attacks. A code model that is backdoor-attacked can behave normally on clean examples but will produce pre-defined malicious
-                  outputs on examples injected with triggers that activate the backdoors. Existing backdoor attacks on code models use unstealthy and
-                  easy-to-detect triggers. This paper aims to investigate the vulnerability of code models with stealthy backdoor attacks. To this end, we
-                  propose AFRAIDOOR (Adversarial Feature as Adaptive Backdoor). AFRAIDOOR achieves stealthiness by leveraging adversarial
-                  perturbations to inject adaptive triggers into different inputs. We apply AFRAIDOOR to three widely adopted code models (CodeBERT,
-                  PLBART and CodeT5) and two downstream tasks (code summarization and method name prediction). We evaluate three widely used
-                  defense methods and find that AFRAIDOOR is much likely to be detected by the defense methods than baseline methods. More
-                  specifically, when using spectral signature as defense, around 85% of adaptive triggers in AFRAIDOOR bypass the detection in the
-                  defense process. By contrast, only less than 12% of the triggers from previous work bypass the defense. When the defense method is
-                  not applied, both AFRAIDOOR and baselines have almost perfect attack success rates. However, once a defense is applied, the attack
-                  success rates of baselines decrease dramatically, while the success rate of AFRAIDOOR still remains high. Our finding exposes security
-                  weaknesses in code models under stealthy backdoor attacks and shows that the state-of-the-art defense method cannot provide
-                  sufficient protection. We call for more research efforts in understanding security threats to code models and developing more effective
-                  countermeasures.
+                  Recent advancements in large language models (LLMs) have revolutionized code intelligence 
+                  by improving programming productivity and alleviating challenges faced by software developers. 
+                  To further improve the performance of LLMs on specific code intelligence tasks and reduce training 
+                  costs, researchers reveal a new capability of LLMs: in-context learning (ICL). ICL allows LLMs to 
+                  learn from a few demonstrations within a specific context, achieving impressive results without 
+                  parameter updating. However, the rise of ICL introduces new security vulnerabilities in the 
+                  code intelligence field. In this paper, we explore a novel security scenario based on the 
+                  ICL paradigm, where attackers act as third-party ICL agencies and provide users with bad ICL 
+                  content to mislead LLMs outputs in code intelligence tasks. Our study demonstrates the feasibility 
+                  and risks of such a scenario, revealing how attackers can leverage malicious demonstrations to 
+                  construct bad ICL content and induce LLMs to produce incorrect outputs, posing significant threats 
+                  to system security. We propose a novel method to construct bad ICL content called DICE, which is 
+                  composed of two stages: Demonstration Selection and Bad ICL Construction, constructing targeted bad 
+                  ICL content based on the user query and transferable across different query inputs. Ultimately, our 
+                  findings emphasize the critical importance of securing ICL mechanisms to protect code intelligence 
+                  systems from adversarial manipulation.
                 </p>
               </div>
             </div>
           </div>
+
           <div class="item">
             <div class="box">
               <div class="img-box">
-                <a href="https://arxiv.org/pdf/2301.02412"><img src="htmls/images/recent_papers/CODA.png" alt=""></a>
+                <a href="https://arxiv.org/abs/2408.04683"><img src="htmls/images/recent_papers/EliBadcode.png" alt=""></a>
               </div>
               <div class="detail-box">
                 <h5>
-                  Code Difference Guided Adversarial Example Generation for Deep Code Models
+                  Eliminating Backdoors in Neural Code Models via Trigger Inversion
                 </h5>
                 <!-- <img src="htmls/images/quote.png" alt=""> -->
                 <p>
-                  Adversarial examples are important to test and enhance the robustness of deep code models. As source code is discrete and has to strictly stick to complex grammar and semantics constraints, the adversarial example generation techniques in other domains are hardly applicable. Moreover, the adversarial example generation techniques specific to deep code models still suffer from unsatisfactory effectiveness due to the enormous ingredient search space. In this work, we propose a novel adversarial example generation technique (i.e., CODA) for testing deep code models. Its key idea is to use code differences between the target input (i.e., a given code snippet as the model input) and reference inputs (i.e., the inputs that have small code differences but different prediction results with the target input) to guide the generation of adversarial examples. It considers both structure differences and identifier differences to preserve the original semantics. Hence, the ingredient search space can be largely reduced as the one constituted by the two kinds of code differences, and thus the testing process can be improved by designing and guiding corresponding equivalent structure transformations and identifier renaming transformations. Our experiments on 15 deep code models demonstrate the effectiveness and efficiency of CODA, the naturalness of its generated examples, and its capability of enhancing model robustness after adversarial fine-tuning. For example, CODA reveals 88.05% and 72.51% more faults in models than the state-of-the-art techniques (i.e., CARROT and ALERT) on average, respectively.
+                  Neural code models (NCMs) have been widely used for addressing various code understanding tasks, 
+                  such as defect detection and clone detection. However, numerous recent studies reveal that such 
+                  models are vulnerable to backdoor attacks. Backdoored NCMs function normally on normal code snippets, 
+                  but exhibit adversary-expected behavior on poisoned code snippets injected with the adversary-crafted 
+                  trigger. It poses a significant security threat. For example, a backdoored defect detection model may 
+                  misclassify user-submitted defective code as non-defective. If this insecure code is then integrated 
+                  into critical systems, like autonomous driving systems, it could lead to life safety. However, there 
+                  is an urgent need for effective defenses against backdoor attacks targeting NCMs.
+                  To address this issue, in this paper, we innovatively propose a backdoor defense technique based 
+                  on trigger inversion, called EliBadCode. EliBadCode first filters the model vocabulary for trigger 
+                  tokens to reduce the search space for trigger inversion, thereby enhancing the efficiency of the 
+                  trigger inversion. Then, EliBadCode introduces a sample-specific trigger position identification 
+                  method, which can reduce the interference of adversarial perturbations for subsequent trigger inversion, 
+                  thereby producing effective inverted triggers efficiently. Subsequently, EliBadCode employs a Greedy 
+                  Coordinate Gradient algorithm to optimize the inverted trigger and designs a trigger anchoring method 
+                  to purify the inverted trigger. Finally, EliBadCode eliminates backdoors through model unlearning. 
+                  We evaluate the effectiveness of EliBadCode in eliminating backdoor attacks against multiple NCMs used 
+                  for three safety-critical code understanding tasks. The results demonstrate that EliBadCode can 
+                  effectively eliminate backdoors while having minimal adverse effects on the normal functionality of the model.  
                 </p>
               </div>
             </div>
           </div>
+
+          <!-- <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <a href="https://jos.org.cn/jos/article/abstract/nL021"><img src="htmls/images/recent_papers/EliBadcode.png" alt=""></a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  深度代码模型安全综述
+                </h5>
+                <p>
+                  With the significant success of deep learning technology in fields such as computer vision 
+                  and natural language processing, software engineering researchers have begun to explore its 
+                  integration into solving software engineering tasks. Existing research results indicate that 
+                  deep learning technology exhibits advantages in various software code-related tasks, such as 
+                  code retrieval and code summarization, that traditional methods and machine learning approaches 
+                  cannot match. These deep learning models, trained for code-related tasks, are collectively referred 
+                  to as deep code models. However, similar to natural language processing and image processing models, 
+                  deep code model security faces numerous challenges due to the vulnerability and lack of interpretability 
+                  of neural networks. It has become a focal point in the field of software engineering. In recent years, 
+                  researchers have proposed numerous attack and defense methods specific to deep code models. 
+                  Nevertheless, there is currently a lack of a systematic review of security research on deep code models, 
+                  hindering rapid understanding of the field for subsequent researchers. To address this gap and provide 
+                  a comprehensive overview of the current state, challenges, and latest research findings in this field, 
+                  this paper collected 32 relevant papers and categorized existing research results into two main classes: 
+                  backdoor attacks and defense techniques, and adversarial attacks and defense techniques. 
+                  The paper systematically organizes and summarizes the collected papers based on different 
+                  technological categories. Subsequently, the paper outlines commonly used experimental datasets 
+                  and evaluation metrics in this field. Finally, the paper analyzes key challenges faced by this 
+                  field and suggests feasible future research directions, aiming to provide valuable guidance for 
+                  further advancing the security of deep code.   
+                </p>
+              </div>
+            </div>
+          </div> -->
+
         </div>
       </div>
     </div>
