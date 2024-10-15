@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="yyd@172.17.205.253:10022 password (3)" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="david@172.17.121.6:22 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/david/GYF/attack-pretrain-models-of-code-main/CodeXGLUE" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="david@172.17.121.6:22 password (7)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_897" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="david@172.17.121.6:22 password (8)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/david/GYF/attack-pretrain-models-of-code-main/CodeXGLUE" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="david@172.17.132.81:18422 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/david/GYF/attack-pretrain-models-of-code-main/CodeXGLUE" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="david@172.17.132.81:18422 password (3)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/david/GYF/attack-pretrain-models-of-code-main/CodeXGLUE" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="david@172.17.132.8:22 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_242" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="david@172.17.132.8:22 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/david/GYF/attack-pretrain-models-of-code-main/CodeXGLUE" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="yyd@172.17.205.253:10022 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/yyd/GYF/attack-pretrain-models-of-code-main/CodeXGLUE" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="yyd@172.17.205.253:10022 password (3)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/yyd/GYF/attack-pretrain-models-of-code-main/CodeXGLUE" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
